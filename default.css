@@ -1,32 +1,33 @@
 :root {
     --mainColor: #121212;
     --secondaryColor: #202020;
+    --themeColor: #FF325A;
     --borderColor: #c1c1c1;
 
     --mainTextColor: white;
-    --secondaryTextColor: #b3b3b3;
 }
 
 html, body {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+    background-color: var(--mainColor);
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-    text-align: center;
     color: var(--mainTextColor);
-    font-family: sans-serif;
 }
 
-h1 { font-size: 56px; }
-h2 { font-size: 36px; }
-h3 { font-size: 28px; }
-h4 { font-size: 24px; }
-h5 { font-size: 20px; }
-h6 { font-size: 16px; }
+h1 { font-size: 90px; }
+h2 { font-size: 65px; }
+h3 { font-size: 50px; }
+h4 { font-size: 40px; }
+h5 { font-size: 30px; }
+h6 { font-size: 20px; }
 
 p, li, span, label, input, textarea {
-    color: var(--secondaryTextColor);
+    color: var(--mainTextColor);
+    font-size: x-large;
 }
 
 a {
@@ -37,20 +38,49 @@ ul {
     list-style: none;
 }
 
-.s1 {
+.greeting-section {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.greeting-section h1 {
+    text-align: center;
+}
+
+
+.portfolio-section {
+    padding: 10% 10%;
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
+    text-align: left;
 }
 
-.s2 {
+.portfolio-section h2 {
+    color: var(--themeColor);
+}
+
+.portfolio-section p {
+    color: var(--mainTextColor);
+}
+
+.knowledge-section {
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
 
-@media screen and (max-width: 1200px) {
-    .main-container {
-        width: 95%;
-    }
+.contact-section {
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
 }
+
+/*@media screen and (max-width: 1200px) {*/
+/*    .main-container {*/
+/*        width: 95%;*/
+/*    }*/
+/*}*/
