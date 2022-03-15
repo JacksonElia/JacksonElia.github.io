@@ -67,6 +67,16 @@ ul {
     color: var(--mainTextColor);
 }
 
+.portfolio-section a {
+    place-self: center;
+}
+
+.portfolio-div {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
 .knowledge-section {
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);

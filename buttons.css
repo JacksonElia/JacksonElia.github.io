@@ -1,0 +1,33 @@
+.button1 {
+  background-image: linear-gradient(to right, #ff5429 0%, #FF325A 100%);
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #ff0033;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+}
+
+.button1:hover {
+  color: #fff;
+}
+
+.button1span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: 0.5s ease-out all;
+  width: 100%;
+}
+
+.button1:hover .button1span {
+  background: transparent;
+}
