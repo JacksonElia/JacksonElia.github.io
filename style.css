@@ -2,6 +2,7 @@
     --mainColor: #121212;
     --secondaryColor: #202020;
     --themeColor: #FF325A;
+    --secondaryThemeColor: #FF6229;
     --borderColor: #c1c1c1;
 
     --mainTextColor: white;
@@ -9,7 +10,7 @@
 
 html, body {
     padding: 0;
-    margin: 0;
+    margin: auto;
     font-family: sans-serif;
     background-color: var(--mainColor);
 }
@@ -34,8 +35,12 @@ a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
+hr {
+    border: 0;
+    height: 2px;
+    background: var(--themeColor) linear-gradient(to right, var(--secondaryThemeColor), var(--themeColor), var(--secondaryThemeColor));
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 
 .greeting-section {

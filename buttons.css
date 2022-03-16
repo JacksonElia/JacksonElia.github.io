@@ -1,33 +1,42 @@
+:root {
+  --mainColor: #121212;
+  --themeColor: #FF325A;
+  --secondaryThemeColor: #FF6229;
+  /* Old color: FF5429 */
+}
+
 .button1 {
-  background-image: linear-gradient(to right, #ff5429 0%, #FF325A 100%);
+  background-image: linear-gradient(to right, var(--secondaryThemeColor) 0%, var(--themeColor) 100%);
   border-radius: 12px;
   box-sizing: border-box;
-  color: #ff0033;
   display: block;
   height: 50px;
   font-size: 1.4em;
   padding: 4px;
   position: relative;
   text-decoration: none;
-  width: 7em;
+  width: 8em;
   z-index: 2;
-}
-
-.button1:hover {
-  color: #fff;
 }
 
 .button1span {
   align-items: center;
-  background: #0e0e10;
+  font-family: monospace;
+  background-color: var(--mainColor);
+  color: var(--themeColor);
   border-radius: 12px;
   display: flex;
   justify-content: center;
   height: 100%;
-  transition: 0.5s ease-out all;
   width: 100%;
+  transition: 1s;
+}
+
+.button1:hover {
+  background: radial-gradient(var(--themeColor), #ff2929);
 }
 
 .button1:hover .button1span {
-  background: transparent;
+  color: var(--mainColor);
+  box-shadow: inset 9em 0 0 0 var(--themeColor);
 }
