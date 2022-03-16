@@ -8,6 +8,12 @@
   --mainTextColor: white;
 }
 
+/* Adds the tint to the image */
+.content > img {
+  transition: .4s;
+  filter: sepia(100%) saturate(150%) brightness(60%) hue-rotate(310deg);
+}
+
 .content > h3, p {
   margin: 2px;
 }
@@ -18,13 +24,14 @@
 
 /* Adds padding in between the cells */
 .row > .cell {
-  padding: 10px;
+  padding: 12px;
 }
 
 /* Makes 3 columns */
 .cell {
   float: left;
   width: 33.3333333%;
+  transition: .4s;
 }
 
 /* Clear floats after rows */
@@ -38,6 +45,14 @@
 .content {
   background-color: var(--secondaryColor);
   padding: 12px;
+}
+
+.cell:hover {
+  transform: scale(1.1);
+}
+
+.cell:hover .content img {
+  filter: none;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
