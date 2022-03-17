@@ -13,7 +13,8 @@
 
 .language-box > h3 {
   text-align: center;
-  margin-top: 3.5%;
+  margin-top: 10%;
+  margin-bottom: 3%;
   font-size: 50px;
 }
 
@@ -32,7 +33,7 @@
 .languages {
   width: 90%;
   height: 90%;
-  margin: 5% 5% 5%;
+  margin: 10% 5% 5%;
   background-color: transparent;
   display: grid;
 
@@ -76,7 +77,6 @@
 .language:hover p {
   color: var(--mainColor);
 }
-
 
 .knowledge-showcase:after {
   content: "";
