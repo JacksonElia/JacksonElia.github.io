@@ -27,7 +27,6 @@ h1 {
 h2 {
   font-size: 65px;
   margin-bottom: 3%;
-  /*color: var(--themeColor);*/
   background: -webkit-linear-gradient(var(--secondaryThemeColor), var(--themeColor));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

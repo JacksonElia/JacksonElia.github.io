@@ -1,5 +1,12 @@
 * {
   box-sizing: border-box;
+
+  --mainColor: #121212;
+  --secondaryColor: #202020;
+  --themeColor: #FF325A;
+  --borderColor: #c1c1c1;
+
+  --mainTextColor: white;
 }
 
 .knowledge-showcase {
@@ -10,15 +17,16 @@
 .language-box > h3 {
   text-align: center;
   margin-top: 3.5%;
+  font-size: 50px;
 }
 
 .language-box {
   float: left;
   width: 33%;
   height: 100%;
-  background-color: lightcoral;
+  background-color: var(--secondaryColor);
+  font-family: monospace;
   display: flex;
-  /*justify-content: center;*/
   flex-direction: column;
   align-items: center;
 }
@@ -26,21 +34,38 @@
 /* Centers languages box */
 .languages {
   width: 90%;
-  height: 100%;
-  margin: -5% 5% 5%;
-  background-color: red;
+  height: 90%;
+  margin: 5% 5% 5%;
+  background-color: transparent;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+
+  grid-template-columns: 1fr;
 }
 
 .language-info-box {
   float: right;
   width: 65.5%;
   height: 100%;
-  background-color: lightcoral;
+  background-color: var(--secondaryColor);
+}
+
+.language > p {
+  color: var(--mainTextColor);
+  font-size: 30px;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .language-num {
+  background: -webkit-linear-gradient(var(--secondaryThemeColor), var(--themeColor));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .knowledge-showcase:after {
