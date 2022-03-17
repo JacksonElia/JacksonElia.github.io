@@ -1,11 +1,6 @@
 * {
   box-sizing: border-box;
 
-  --mainColor: #121212;
-  --secondaryColor: #202020;
-  --themeColor: #FF325A;
-  --borderColor: #c1c1c1;
-
   --mainTextColor: white;
 }
 
