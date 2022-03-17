@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.knowledge-showcase {
+  height: 600px;
+  padding: 2%;
+}
+
+.language-box > h3 {
+  text-align: center;
+  margin-top: 3.5%;
+}
+
+.language-box {
+  float: left;
+  width: 33%;
+  height: 100%;
+  background-color: lightcoral;
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Centers languages box */
+.languages {
+  width: 90%;
+  height: 100%;
+  margin: -5% 5% 5%;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.language-info-box {
+  float: right;
+  width: 65.5%;
+  height: 100%;
+  background-color: lightcoral;
+}
+
+.language-num {
+}
+
+.knowledge-showcase:after {
+  content: "";
+  display: table;
+  clear: both;
+}

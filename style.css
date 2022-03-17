@@ -15,33 +15,27 @@ html, body {
   background-color: var(--mainColor);
 }
 
-h1, h2, h3, h4, h5, h6, strong {
-  color: var(--mainTextColor);
+p {
+  color: var(--mainTextColor)
 }
 
 h1 {
   font-size: 90px;
+  color: var(--mainTextColor);
 }
 
 h2 {
   font-size: 65px;
   margin-bottom: 3%;
+  /*color: var(--themeColor);*/
+  background: -webkit-linear-gradient(var(--secondaryThemeColor), var(--themeColor));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
-  font-size: 50px;
-}
-
-h4 {
-  font-size: 40px;
-}
-
-h5 {
-  font-size: 30px;
-}
-
-h6 {
-  font-size: 20px;
+  font-size: 35px;
+  color: var(--mainTextColor);
 }
 
 p, li, span, label, input, textarea {
@@ -75,23 +69,11 @@ hr {
 
 
 .portfolio-section {
-  padding: 10% 10%;
-  background-color: var(--mainColor);
-  border-bottom: 1px solid var(--borderColor);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
   overflow: auto;
   text-align: left;
-}
-
-.portfolio-section h2 {
-  color: var(--themeColor);
-}
-
-.portfolio-section p {
-  color: var(--mainTextColor);
-}
-
-.portfolio-section a {
-  place-self: center;
 }
 
 .portfolio-div {
@@ -100,10 +82,19 @@ hr {
   align-items: center;
 }
 
+.portfolio-section a {
+  place-self: center;
+}
+
 .knowledge-section {
-  background-color: var(--secondaryColor);
-  border-bottom: 1px solid var(--borderColor);
+  padding-left: 10%;
+  padding-right: 10%;
   overflow: auto;
+  text-align: left;
+}
+
+.knowledge-div {
+  align-items: center;
 }
 
 .contact-section {
