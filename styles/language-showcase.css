@@ -1,8 +1,5 @@
 * {
   box-sizing: border-box;
-
-  --blendedColor: #FF3854;
-
   transition: .5s;
 }
 

@@ -3,7 +3,7 @@
   --secondaryColor: #202020;
   --themeColor: #FF325A;
   --secondaryThemeColor: #FF6229;
-  --borderColor: #c1c1c1;
+  --blendedColor: #FF3854;
 
   --mainTextColor: white;
 }
@@ -102,9 +102,3 @@ hr {
   overflow: auto;
   text-align: left;
 }
-
-/*@media screen and (max-width: 1200px) {*/
-/*    .main-container {*/
-/*        width: 95%;*/
-/*    }*/
-/*}*/
