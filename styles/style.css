@@ -68,6 +68,7 @@ hr {
 
 
 .portfolio-section {
+  margin-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 5%;
@@ -86,6 +87,7 @@ hr {
 }
 
 .knowledge-section {
+  margin-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
   overflow: auto;
@@ -101,4 +103,6 @@ hr {
   padding-right: 10%;
   overflow: auto;
   text-align: left;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
