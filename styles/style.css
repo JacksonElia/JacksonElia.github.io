@@ -75,13 +75,13 @@ hr {
   text-align: left;
 }
 
-.portfolio-div {
+.portfolio-div, .contact-div {
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
 }
 
-.portfolio-section a {
+.portfolio-section a, .contact-section a {
   place-self: center;
 }
 
@@ -97,9 +97,10 @@ hr {
 }
 
 .contact-section {
-  background-color: var(--mainColor);
-  border-bottom: 1px solid var(--borderColor);
+  padding-left: 10%;
+  padding-right: 10%;
   overflow: auto;
+  text-align: left;
 }
 
 /*@media screen and (max-width: 1200px) {*/
