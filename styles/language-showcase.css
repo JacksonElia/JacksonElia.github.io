@@ -69,6 +69,7 @@
 .language:hover {
   background-color: var(--blendedColor);
   border-radius: 20px;
+  filter: brightness(130%);
 }
 
 .language:hover p {

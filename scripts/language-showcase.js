@@ -1,18 +1,30 @@
+let languages = document.getElementsByClassName("language");
+const mainColor = getComputedStyle(languages[0]).getPropertyValue("--mainColor");
 
-var libox = document.getElementsByClassName("language-info-box")[0];
-var languagelabels = document.getElementsByClassName("language");
-function populateInfoBox(info = "<i>nah</i>") {
-  libox.innerHTML = info;
+selectLanguage(languages[0])
+
+function selectLanguage(selectedLanguage) {
+  for (const language of languages) {
+    if (language === selectedLanguage) {
+      console.log(selectedLanguage);
+      language.style.cssText = `
+        background-color: var(--blendedColor);
+        border-radius: 20px;
+      `;
+      language.getElementsByTagName("p")[0].style.color = mainColor;
+      language.getElementsByTagName("p")[1].style.color = mainColor;
+      setLanguageInfo(language)
+    } else {
+      language.style.cssText = "";
+      language.getElementsByTagName("p")[0].style.cssText = "";
+      language.getElementsByTagName("p")[1].style.cssText = "";
+    }
+  }
 }
-languagelabels[0].addEventListener("click", function() {
-  populateInfoBox("js");
-});
-languagelabels[1].addEventListener("click", function() {
-  populateInfoBox("hjl");
-});
-languagelabels[2].addEventListener("click", function() {
-  populateInfoBox("s");
-});
-languagelabels[3].addEventListener("click", function() {
-  populateInfoBox("among us");
-});
+
+function setLanguageInfo(language) {
+  switch (language.getElementsByTagName("p")[1].textContent) {
+    case "Python":
+      console.log("py")
+  }
+}
