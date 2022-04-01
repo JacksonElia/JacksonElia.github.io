@@ -2,7 +2,6 @@
   --mainColor: #121212;
   --themeColor: #FF325A;
   --secondaryThemeColor: #FF6229;
-  /* Old color: FF5429 */
 }
 
 .button1 {
@@ -15,13 +14,12 @@
   padding: 4px;
   position: relative;
   text-decoration: none;
-  width: 8em;
-  z-index: 2;
+  width: 200px;
 }
 
 .button1span {
   align-items: center;
-  font-family: monospace;
+  font-family: var(--secondaryFont);
   background-color: var(--mainColor);
   color: var(--themeColor);
   border-radius: 12px;

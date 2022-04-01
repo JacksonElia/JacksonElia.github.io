@@ -1,17 +1,22 @@
 :root {
   --mainColor: #121212;
   --secondaryColor: #202020;
+  --tertiaryColor: #b8b8b8;
+  --quaternaryColor: dimgrey;
   --themeColor: #FF325A;
   --secondaryThemeColor: #FF6229;
   --blendedColor: #FF3854;
 
   --mainTextColor: white;
+
+  --mainFont: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  --secondaryFont: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
 html, body {
   padding: 0;
   margin: auto;
-  font-family: system-ui;
+  font-family: var(--mainFont);
   background-color: var(--mainColor);
 }
 

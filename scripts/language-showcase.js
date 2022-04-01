@@ -1,8 +1,10 @@
 let languages = document.getElementsByClassName("language");
 const mainColor = getComputedStyle(languages[0]).getPropertyValue("--mainColor");
 
-selectLanguage(languages[0])
+// Sets Python as selected as default
+selectLanguage(languages[0]);
 
+// Iterates through the languages and formats the page based on the selected one
 function selectLanguage(selectedLanguage) {
   for (const language of languages) {
     if (language === selectedLanguage) {
@@ -22,9 +24,22 @@ function selectLanguage(selectedLanguage) {
   }
 }
 
+// Formats the info box based on what language is selected
 function setLanguageInfo(language) {
   switch (language.getElementsByTagName("p")[1].textContent) {
     case "Python":
-      console.log("py")
+        // language.innerHTML = `
+        //
+        // `;
+      break;
+    case "Java":
+
+      break;
+    case "Swift":
+
+      break;
+    case "JavaScript":
+
+      break;
   }
 }

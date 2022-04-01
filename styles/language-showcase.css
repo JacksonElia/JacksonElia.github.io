@@ -20,7 +20,7 @@
   width: 33%;
   height: 100%;
   background-color: var(--secondaryColor);
-  font-family: monospace;
+  font-family: var(--secondaryFont);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,6 +74,94 @@
 
 .language:hover p {
   color: var(--mainColor);
+}
+
+.language-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.progress-bars {
+  margin-top: 5%;
+}
+
+.chart {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  display: block;
+}
+
+.chart footer {
+  height: 4px;
+  width: 100%;
+  background-color: var(--quaternaryColor);
+}
+
+.progress-bar {
+  height: 100%;
+  width: 80%;
+  margin-top: 3%;
+  background-image: linear-gradient(to right, var(--themeColor) 0%, var(--secondaryThemeColor) 100%);
+}
+
+.language-description {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -3%;
+}
+
+.example-projects {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  height: 32%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--themeColor);
+  border-radius: 20px;
+}
+
+.project-inner {
+  padding: 7% 10%;
+}
+
+.project-top span {
+  font-size: 30px;
+  font-family: var(--secondaryFont);
+}
+
+.project-top p {
+  margin: 5% 1%;
+  font-size: 15px;
+  font-family: var(--secondaryFont);
+  color: var(--tertiaryColor);
+}
+
+.project-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-bottom p {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 15px;
+  color: var(--quaternaryColor);
+}
+
+.project-inner i {
+  font-size: 30px;
+  color: var(--themeColor);
 }
 
 .knowledge-showcase:after {
