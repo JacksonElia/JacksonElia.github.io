@@ -154,6 +154,10 @@
   font-family: var(--secondaryFont);
 }
 
+.project-top span:hover {
+  color: var(--themeColor);
+}
+
 .project-top p {
   margin: 10px 1px;
   font-size: 15px;
