@@ -93,6 +93,10 @@
   display: block;
 }
 
+.chart span {
+  font-size: 30px;
+}
+
 .chart footer {
   height: 4px;
   width: 100%;
@@ -101,9 +105,16 @@
 
 .progress-bar {
   height: 100%;
-  width: 80%;
   margin-top: 3%;
   background-image: linear-gradient(to right, var(--themeColor) 0%, var(--secondaryThemeColor) 100%);
+}
+
+#confidence-bar {
+  width: 100%;
+}
+
+#enjoyment-bar {
+  width: 100%;
 }
 
 .language-description {
@@ -131,16 +142,20 @@
 }
 
 .project-inner {
-  padding: 7% 10%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 40px;
 }
 
 .project-top span {
-  font-size: 30px;
+  font-size: 27px;
   font-family: var(--secondaryFont);
 }
 
 .project-top p {
-  margin: 5% 1%;
+  margin: 10px 1px;
   font-size: 15px;
   font-family: var(--secondaryFont);
   color: var(--tertiaryColor);
@@ -153,8 +168,8 @@
 }
 
 .project-bottom p {
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 8px;
+  margin-bottom: 8px;
   font-size: 15px;
   color: var(--quaternaryColor);
 }
