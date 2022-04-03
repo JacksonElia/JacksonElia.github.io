@@ -12,6 +12,10 @@
   margin: 2px;
 }
 
+.content > p {
+  font-size: 22px;
+}
+
 .row {
   margin: 0 -8px;
 }
