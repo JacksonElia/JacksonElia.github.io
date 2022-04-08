@@ -10,7 +10,6 @@
   box-sizing: border-box;
   display: block;
   height: 50px;
-  font-size: 1.4em;
   padding: 4px;
   position: relative;
   text-decoration: none;
@@ -20,6 +19,7 @@
 .button1span {
   align-items: center;
   font-family: var(--secondaryFont);
+  font-size: 150%;
   background-color: var(--mainColor);
   color: var(--themeColor);
   border-radius: 12px;
