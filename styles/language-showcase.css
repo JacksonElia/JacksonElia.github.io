@@ -54,6 +54,7 @@
   justify-content: space-between;
   margin-left: 4%;
   margin-right: 4%;
+  min-height: 40px;
   max-height: 40px;
 }
 
