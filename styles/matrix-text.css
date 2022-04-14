@@ -1,11 +1,11 @@
-.matrix-text {
+#matrix-text {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-.matrix-text h1 {
+#matrix-text h1 {
   position: absolute!important;
   top: 50%!important;
   left: 50%!important;
@@ -14,9 +14,13 @@
 }
 
 .matrix-scroll {
-  width: 20px;
-  height: 120px;
-  background-color: green;
+  width: 25px;
+  background-color: var(--themeColor);
   position: absolute;
   mix-blend-mode: screen;
+}
+
+.blur {
+  min-height: 50px;
+  filter: blur(10px);
 }
