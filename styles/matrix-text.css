@@ -1,0 +1,22 @@
+.matrix-text {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.matrix-text h1 {
+  position: absolute!important;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%)!important;
+  margin: 0!important;
+}
+
+.matrix-scroll {
+  width: 20px;
+  height: 120px;
+  background-color: green;
+  position: absolute;
+  mix-blend-mode: screen;
+}

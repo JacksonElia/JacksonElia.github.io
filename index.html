@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="styles/header.css">
   <link rel="stylesheet" type="text/css" href="styles/buttons.css">
+  <link rel="stylesheet" type="text/css" href="styles/matrix-text.css">
   <link rel="stylesheet" type="text/css" href="styles/gallery.css">
   <link rel="stylesheet" type="text/css" href="styles/language-showcase.css">
   <link rel="stylesheet" type="text/css" href="styles/footer.css">
@@ -16,12 +17,32 @@
 </head>
 <body>
 
-<header>This is a header</header>
+<header>
+  <div id="header-container">
+    <a href="index.html" id="logo"></a>
+    <nav id="main-nav">
+      <div id="main-nav-container">
+        <ul id="main-nav-list">
+          <li class="main-nav-item"><a href="#">About</a></li>
+          <li class="main-nav-item"><a href="#">Skills</a></li>
+          <li class="main-nav-item"><a href="#">Contact</a></li>
+          <li class="main-nav-item"><a href="#">Random Project</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
 
 <section class="greeting-section">
-  <div class="main-container">
-    <h1>Hi, I'm Jack.</h1>
+
+  <div class="matrix-text">
+
+    <div class="main-container">
+      <h1>Hi, I'm Jack.</h1>
+    </div>
+
   </div>
+
 </section>
 
 <section class="portfolio-section">
@@ -234,6 +255,7 @@
 </div>
 
 <script src="scripts/language-showcase.js"></script>
+<script src="scripts/matrix-text.js"></script>
 
 </body>
 </html>

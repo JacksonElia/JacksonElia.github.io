@@ -1,0 +1,9 @@
+.about-first-block {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+
+.about-picture > img {
+  max-width: 300px;
+}
