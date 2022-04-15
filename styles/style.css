@@ -113,9 +113,7 @@ hr {
 }
 
 .page-section {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 5%;
+  padding: 8% 10% 5%;
   overflow: auto;
   text-align: left;
 }

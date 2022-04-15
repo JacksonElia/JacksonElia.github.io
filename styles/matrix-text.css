@@ -21,6 +21,10 @@
 }
 
 .blur {
-  min-height: 50px;
-  filter: blur(10px);
+  position: absolute;
+  top: 90vh;
+  width: 100%;
+  min-height: 100px;
+  backdrop-filter: blur(5px);
+  z-index: 1;
 }
