@@ -20,11 +20,9 @@
   mix-blend-mode: screen;
 }
 
-.blur {
+.matrix-scroll-shiny {
+  width: 25px;
+  background-image: linear-gradient(to bottom, var(--secondaryThemeColor) 0%, var(--themeColor) 100%);
   position: absolute;
-  top: 90vh;
-  width: 100%;
-  min-height: 100px;
-  backdrop-filter: blur(5px);
-  z-index: 1;
+  mix-blend-mode: screen;
 }

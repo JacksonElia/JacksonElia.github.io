@@ -1,14 +1,17 @@
 let matrixTextBox = document.getElementById("matrix-text")
 
-function createScroll(x, y, height, scale) {
+function createScroll(x, y, height, scale, shiny) {
   let scroll = document.createElement("div");
-  scroll.className = "matrix-scroll";
+  if (shiny) {
+    scroll.className = "matrix-scroll-shiny"
+  } else {
+    scroll.className = "matrix-scroll"
+  }
   scroll.style.top = `${y}px`;
   scroll.style.left = `${x}px`;
   scroll.style.height = `${height}px`;
   scroll.style.transform = `scale(${scale})`;
   document.querySelector("#matrix-text").appendChild(scroll);
-  return scroll;
 }
 
 let frameKeep = 0;
@@ -21,17 +24,19 @@ function tick() {
         Math.floor(Math.random() * matrixTextBox.offsetWidth),
         -height - 100,
         height,
-        1 + Math.random() / 2.5
+        1 + Math.random() / 2.5,
+        (Math.random() >= .9)
     );
   }
 
   let speed = 10;
   var scrollsToRemove = [];
-  for (let scroll of document.getElementsByClassName("matrix-scroll")) {
+  for (let scroll of document.querySelectorAll(".matrix-scroll,.matrix-scroll-shiny")) {
     let currentY = parseFloat(scroll.style.top);
     let scale = parseFloat(scroll.style.transform.replace("scale(", ""))
     scroll.style.top = `${currentY + speed}px`;
-    if (parseFloat(scroll.style.top) > matrixTextBox.getBoundingClientRect().height + 500) {
+    if (parseFloat(scroll.style.top)
+        > matrixTextBox.getBoundingClientRect().height + 500) {
       scrollsToRemove.push(scroll);
       console.log(scroll.style.top)
     }
