@@ -36,7 +36,7 @@ function tick() {
     let scale = parseFloat(scroll.style.transform.replace("scale(", ""))
     scroll.style.top = `${currentY + speed}px`;
     if (parseFloat(scroll.style.top)
-        > matrixTextBox.getBoundingClientRect().height + 500) {
+        > matrixTextBox.getBoundingClientRect().height + 1000) {
       scrollsToRemove.push(scroll);
       console.log(scroll.style.top)
     }

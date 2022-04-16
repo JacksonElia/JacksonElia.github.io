@@ -22,7 +22,7 @@
 
 .matrix-scroll-shiny {
   width: 25px;
-  background-image: linear-gradient(to bottom, var(--secondaryThemeColor) 0%, var(--themeColor) 100%);
+  background-image: linear-gradient(to top, var(--secondaryThemeColor) 0%, var(--themeColor) 100%);
   position: absolute;
   mix-blend-mode: screen;
 }
