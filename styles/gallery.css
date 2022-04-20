@@ -22,7 +22,7 @@
 
 /* Adds padding in between the cells */
 .row > .cell {
-  padding: 12px;
+  padding: 1%;
 }
 
 /* Makes 3 columns */
