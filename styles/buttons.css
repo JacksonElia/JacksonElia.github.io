@@ -19,7 +19,7 @@
 .button1span {
   align-items: center;
   font-family: var(--secondaryFont);
-  font-size: 150%;
+  font-size: 22px;
   background-color: var(--mainColor);
   color: var(--themeColor);
   border-radius: 12px;
