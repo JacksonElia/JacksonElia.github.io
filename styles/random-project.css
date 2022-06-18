@@ -6,7 +6,9 @@
 
 .random-project-title i {
   font-size: 80px;
-  color: var(--themeColor);
+  background: -webkit-linear-gradient(var(--secondaryThemeColor), var(--themeColor));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .random-project-image {
