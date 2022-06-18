@@ -1,3 +1,14 @@
+.random-project-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.random-project-title i {
+  font-size: 80px;
+  color: var(--themeColor);
+}
+
 .random-project-image {
   width: 100%;
   height: 90vh;
@@ -6,4 +17,18 @@
 .random-project-image img {
   width: 100%;
   height: 100%;
+}
+
+.random-project-first-block {
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   gap: 30px;
+   align-items: center;
+ }
+
+.random-project-first-block img {
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

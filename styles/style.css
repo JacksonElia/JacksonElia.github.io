@@ -110,11 +110,19 @@ hr {
 }
 
 .page-section {
-  padding: 7% 10% 3%;
+  padding: 170px 10% 3%;
   overflow: auto;
   text-align: left;
 }
 
 .page-section h2 {
   font-size: 80px;
+  margin-top: 0;
+  margin-left: -4px;
+  margin-bottom: 0;
+}
+
+.page-subtitle {
+  color: var(--quaternaryColor);
+  margin-top: 2%;
 }
