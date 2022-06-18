@@ -21,22 +21,14 @@
   height: 100%;
 }
 
-.random-project-first-block {
-   display: grid;
-   grid-template-columns: 3fr 1fr;
-   gap: 30px;
-   align-items: center;
- }
-
-.random-project-first-block img {
-  max-width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.random-project-text-video {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
 }
 
-.thing-learned-item {
-  color: var(--themeColor)
+.random-project-video {
+  max-width: 300px;
 }
 
 .thing-learned-item p {
@@ -45,12 +37,12 @@
 
 .call-to-action-box {
   margin-top: -20px;
-  gap: 20px;
+  gap: 80px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
 }
 
-h3 {
-  padding-top: 30px;
+ol li::marker {
+  color: var(--themeColor);
 }

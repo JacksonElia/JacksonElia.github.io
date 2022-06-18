@@ -84,6 +84,7 @@ hr {
 .portfolio-div, .contact-div {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  gap: 80px;
   align-items: center;
 }
 
@@ -125,4 +126,11 @@ hr {
 .page-subtitle {
   color: var(--tertiaryColor);
   margin-top: 2%;
+}
+
+.subtitle {
+  background: -webkit-linear-gradient(var(--secondaryThemeColor), var(--themeColor));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 30px;
 }
