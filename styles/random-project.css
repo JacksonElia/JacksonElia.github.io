@@ -22,9 +22,11 @@
 }
 
 .random-project-text-video {
+  margin-top: -60px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 30px;
+  align-items: center;
 }
 
 .random-project-video {
@@ -65,7 +67,7 @@
   width: 100px;
   background-color: var(--blendedColor);
   font-size: 80px;
-  font-family: monospace;  /* TODO: Find a good font for this and figure out JS behind it */
+  font-family: arial, helvetica, sans-serif;
   transition: .5s;
 }
 
