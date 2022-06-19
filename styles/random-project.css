@@ -43,6 +43,52 @@
   align-items: center;
 }
 
+.random-project-sixth-block {
+  height: 300px;
+}
+
+.additional-projects-block {
+  gap: 10px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.additional-projects-row {
+  scroll-behavior: smooth;
+}
+
+.scroll-button {
+  height: 200px;
+  width: 100px;
+  background-color: var(--blendedColor);
+  font-size: 80px;
+  font-family: monospace;  /* TODO: Find a good font for this and figure out JS behind it */
+  transition: .5s;
+}
+
+.scroll-button:hover {
+  filter: brightness(130%);
+}
+
+.additional-projects-row {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.additional-project-item {
+  height: 180px;
+  min-width: 180px;
+  background-color: var(--secondaryColor)
+}
+
 ol li::marker {
-  color: var(--themeColor);
+  color: var(--blendedColor);
 }

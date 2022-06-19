@@ -5,22 +5,30 @@
   align-items: center;
 }
 
-.about-second-block {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: 30px;
-  align-items: center;
+.about-first-block p {
+  font-size: 40px;
+}
+
+.about-quick-facts li {
+  font-size: 40px;
+}
+
+.about-quick-facts li::marker {
+  color: var(--themeColor);
+}
+
+.about-second-block span {
+  color: var(--themeColor);
 }
 
 .about-third-block {
   margin-top: 35px;
 }
 
-p {
-  line-height: 45px;
-  font-size: 30px;
-}
+/*p {*/
+/*  line-height: 45px;*/
+/*  font-size: 30px;*/
+/*}*/
 
 #about-img-1 {
   max-width: 300px;

@@ -126,6 +126,45 @@
     </div>
   </div>
 
+  <div class="random-project-sixth-block">
+    <h3 class="subtitle">Additional Projects</h3>
+
+    <div class="additional-projects-block">
+      <button class="scroll-button" onclick="scrollL()">
+        <
+      </button>
+      <div class="additional-projects-row">
+        <div class="additional-project-item">
+
+        </div>
+        <div class="additional-project-item">
+
+        </div>
+        <div class="additional-project-item">
+
+        </div>
+        <div class="additional-project-item">
+
+        </div>
+        <div class="additional-project-item">
+
+        </div>
+        <div class="additional-project-item">
+
+        </div>
+        <div class="additional-project-item">
+
+        </div>
+        <div class="additional-project-item">
+
+        </div>
+      </div>
+      <button class="scroll-button" onclick="scrollR()">
+        >
+      </button>
+    </div>
+  </div>
+
 </section>
 
 <div class="footer">
@@ -148,6 +187,16 @@
     <p class="copyright">Jackson Elia © 2022</p>
   </footer>
 </div>
+
+<script>
+  let additionalProjectsRow = document.getElementsByClassName("additional-projects-row")[0] // Theres only one
+  function scrollL() {
+    additionalProjectsRow.scrollBy(-300, 0)
+  }
+  function scrollR() {
+    additionalProjectsRow.scrollBy(300, 0)
+  }
+</script>
 
 </body>
 </html>
