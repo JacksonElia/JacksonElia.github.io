@@ -1,4 +1,4 @@
-.about-first-block {
+.about-first-block, .text-image {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 30px;
@@ -21,14 +21,19 @@
   color: var(--themeColor);
 }
 
+.image-infotext {
+  align-items: center;
+}
+
+.image-infotext p {
+  text-align: center;
+  margin-bottom: -15px;
+  color: var(--tertiaryColor);
+}
+
 .about-third-block {
   margin-top: 35px;
 }
-
-/*p {*/
-/*  line-height: 45px;*/
-/*  font-size: 30px;*/
-/*}*/
 
 #about-img-1 {
   max-width: 300px;
