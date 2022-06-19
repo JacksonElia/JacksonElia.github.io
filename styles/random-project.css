@@ -96,6 +96,23 @@
   background-color: var(--secondaryColor)
 }
 
+.additional-project-image {
+  margin: 10px;
+  height: 160px;
+  width: 160px;
+}
+
+.project-icon-image {
+  height: 160px;
+  width: 160px;
+  transition: .4s;
+  filter: sepia(100%) saturate(150%) brightness(60%) hue-rotate(-50deg);
+}
+
+.project-icon-image:hover {
+  filter: none;
+}
+
 ol li::marker {
   color: var(--blendedColor);
 }

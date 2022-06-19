@@ -1,6 +1,11 @@
 let randomProjects = document.getElementsByClassName("random-project-div")
 
 function showProject(projectNumber) {
+  for (let randomProject of randomProjects) {
+    randomProject.style.display = "none";
+    randomProject.style.visibility = "hidden";
+
+  }
   let randomProject = randomProjects[projectNumber]
   randomProject.style.display = "block";
   randomProject.style.visibility = "visible";

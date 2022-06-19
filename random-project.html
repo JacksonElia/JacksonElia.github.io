@@ -967,28 +967,61 @@
       </button>
       <div class="additional-projects-row">
         <div class="additional-project-item">
-
+          <div class="additional-project-image">
+            <a href="random-project.html#AFK_Apex_Bot" onclick="scrollUp()">
+              <img class="project-icon-image" alt="AFK_Apex_Bot Icon" src="images/AFK_Apex_Bot_Icon.webp">
+            </a>
+          </div>
         </div>
         <div class="additional-project-item">
+          <div class="additional-project-image">
 
+          </div>
         </div>
         <div class="additional-project-item">
+          <div class="additional-project-image">
 
+          </div>
         </div>
         <div class="additional-project-item">
-
+          <div class="additional-project-image">
+            <a href="random-project.html#DCS_Terminal" onclick="scrollUp()">
+              <img class="project-icon-image" alt="DCS_Terminal Icon" src="images/DCSTerminal-Logo.png">
+            </a>
+          </div>
         </div>
         <div class="additional-project-item">
-
+          <div class="additional-project-image">
+            <a href="random-project.html#Ethermine_Tracker" onclick="scrollUp()">
+              <img class="project-icon-image" alt="Ethermine_Tracker Icon" src="images/Ethermine%20Tracker%20Logo.png">
+            </a>
+          </div>
         </div>
         <div class="additional-project-item">
-
+          <div class="additional-project-image">
+            <a href="random-project.html#Mazer" onclick="scrollUp()">
+              <img class="project-icon-image" alt="Mazer Icon" src="images/mazer_icon.jpg">
+            </a>
+          </div>
         </div>
         <div class="additional-project-item">
-
+          <div class="additional-project-image">
+            <a href="random-project.html#Screen_Dimmer" onclick="scrollUp()">
+              <img class="project-icon-image" alt="Screen_Dimmer Icon" src="images/Screen_Dimmer_Logo.png">
+            </a>
+          </div>
         </div>
         <div class="additional-project-item">
+          <div class="additional-project-image">
 
+          </div>
+        </div>
+        <div class="additional-project-item">
+          <div class="additional-project-image">
+            <a href="random-project.html#This_Website" onclick="scrollUp()">
+              <img class="project-icon-image" alt="Website Logo made by Sydney" src="images/Logo.png">
+            </a>
+          </div>
         </div>
       </div>
       <button class="scroll-button" onclick="scrollR()">
@@ -1023,13 +1056,20 @@
 <!--  Runs the script when the page loads  -->
 <script src="scripts/random-project.js" defer></script>
 <script>
+  function scrollUp() {
+    window.scrollBy(0, -10000);
+  }
   let additionalProjectsRow = document.getElementsByClassName("additional-projects-row")[0] // Theres only one
   function scrollL() {
-    additionalProjectsRow.scrollBy(-300, 0)
+    additionalProjectsRow.scrollBy(-450, 0)
   }
   function scrollR() {
-    additionalProjectsRow.scrollBy(300, 0)
+    additionalProjectsRow.scrollBy(450, 0)
   }
+</script>
+<script>
+<!--  Updates the page if the hash changes  -->
+  window.addEventListener("hashchange",() => { loadPage() })
 </script>
 
 </body>
