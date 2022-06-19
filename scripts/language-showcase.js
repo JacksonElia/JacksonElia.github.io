@@ -55,7 +55,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="/random-project.html#Mazer">
+                <a href="https://traptricker.github.io/random-project.html#Mazer">
                   <span>Mazer</span>
                 </a>
                 <p>Make a maze and watch as it is solved!</p>
@@ -71,7 +71,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="/random-project.html#DCS_Terminal">
+                <a href="https://traptricker.github.io/random-project.html#DCS_Terminal">
                   <span>DCS Terminal</span>
                 </a>
                 <p>Automatically solves any course on Datacamp!</p>
@@ -115,7 +115,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="/random-project.html#Bouncy">
+                <a href="https://traptricker.github.io/random-project.html#Bouncy">
                   <span>Bouncy</span>
                 </a>
                 <p>A simple game that quickly becomes chaos.</p>
@@ -131,7 +131,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="/random-project.html#Ethermine_Tracker">
+                <a href="https://traptricker.github.io/random-project.html#Ethermine_Tracker">
                   <span>Ether Tracker</span>
                 </a>
                 <p>Tracks a miner address and stores data.</p>
@@ -175,7 +175,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="/random-project.html#William_Whitakers_Words_App">
+                <a href="https://traptricker.github.io/random-project.html#William_Whitakers_Words_App">
                   <span>William Whitaker's Words App</span>
                 </a>
                 <p>Uses William Whitaker's Words to translate Latin words. It
@@ -219,7 +219,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="/random-project.html#This_Website">
+                <a href="https://traptricker.github.io/random-project.html#This_Website">
                   <span>My Website</span>
                 </a>
                 <p>This is the website you're on. This section was my first
