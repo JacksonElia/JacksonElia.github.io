@@ -1,4 +1,4 @@
-let matrixTextBox = document.getElementById("matrix-text")
+const matrixTextBox = document.getElementById("matrix-text")
 
 function createScroll(x, y, height, scale, shiny) {
   let scroll = document.createElement("div");
@@ -30,7 +30,7 @@ function tick() {
   }
 
   let speed = 10;
-  var scrollsToRemove = [];
+  let scrollsToRemove = [];
   for (let scroll of document.querySelectorAll(".matrix-scroll,.matrix-scroll-shiny")) {
     let currentY = parseFloat(scroll.style.top);
     let scale = parseFloat(scroll.style.transform.replace("scale(", ""))
@@ -42,11 +42,12 @@ function tick() {
     }
   }
 
-  for (var i = 0; i < scrollsToRemove.length; i++) {
+  for (let i = 0; i < scrollsToRemove.length; i++) {
     scrollsToRemove[i].remove();
   }
 }
 
+// The main loop for the matrix text
 function mainLoop() {
   tick();
   requestAnimationFrame(mainLoop)
