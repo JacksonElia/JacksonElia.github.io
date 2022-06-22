@@ -14,11 +14,11 @@ function createScroll(x, y, height, scale, shiny) {
   document.querySelector("#matrix-text").appendChild(scroll);
 }
 
-let frameKeep = 0;
+let matrix_text_frameKeep = 0;
 
-function tick() {
-  frameKeep++;
-  if (frameKeep % 6 === 0) {
+function matrix_text_tick() {
+  matrix_text_frameKeep++;
+  if (matrix_text_frameKeep % 6 === 0) {
     let height = Math.floor(Math.random() * 600) + 100;
     createScroll(
         Math.floor(Math.random() * matrixTextBox.offsetWidth),
@@ -31,14 +31,14 @@ function tick() {
 
   let speed = 10;
   let scrollsToRemove = [];
-  for (let scroll of document.querySelectorAll(".matrix-scroll,.matrix-scroll-shiny")) {
+  for (let scroll of
+      document.querySelectorAll(".matrix-scroll,.matrix-scroll-shiny")) {
     let currentY = parseFloat(scroll.style.top);
     let scale = parseFloat(scroll.style.transform.replace("scale(", ""))
     scroll.style.top = `${currentY + speed}px`;
     if (parseFloat(scroll.style.top)
         > matrixTextBox.getBoundingClientRect().height + 1000) {
       scrollsToRemove.push(scroll);
-      console.log(scroll.style.top)
     }
   }
 
@@ -48,9 +48,14 @@ function tick() {
 }
 
 // The main loop for the matrix text
-function mainLoop() {
-  tick();
-  requestAnimationFrame(mainLoop)
+function matrix_text_mainLoop() {
+  // This checks to make sure the matrix text is on screen, if its not, it doesn't run it
+  let rect = matrixTextBox.getBoundingClientRect();
+  if (!((rect.x + rect.width) < 0 || (rect.y + rect.height) < 0 || (rect.x
+      > window.innerWidth || rect.y > window.innerHeight))) {
+    matrix_text_tick();
+  }
+  requestAnimationFrame(matrix_text_mainLoop);
 }
 
-requestAnimationFrame(mainLoop)
+requestAnimationFrame(matrix_text_mainLoop);
