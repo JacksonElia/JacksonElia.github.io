@@ -50,9 +50,9 @@ function matrix_text_tick() {
 // The main loop for the matrix text
 function matrix_text_mainLoop() {
   // This checks to make sure the matrix text is on screen, if its not, it doesn't run it
-  let rect = matrixTextBox.getBoundingClientRect();
-  if (!((rect.x + rect.width) < 0 || (rect.y + rect.height) < 0 || (rect.x
-      > window.innerWidth || rect.y > window.innerHeight))) {
+  let matrix_text_rect = matrixTextBox.getBoundingClientRect();
+  if (!((matrix_text_rect.x + matrix_text_rect.width) < 0 || (matrix_text_rect.y + matrix_text_rect.height) < 0 || (matrix_text_rect.x
+      > window.innerWidth || matrix_text_rect.y > window.innerHeight))) {
     matrix_text_tick();
   }
   requestAnimationFrame(matrix_text_mainLoop);

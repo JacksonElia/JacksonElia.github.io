@@ -6,7 +6,7 @@ const drawingContext = canvas.getContext('2d');
 
 const backgroundColor = "#202020";
 const cellColor = "#FF3854";
-const cellSize = 50;
+const cellSize = 40;
 
 canvas.width = footer.clientWidth;
 canvas.height = footer.clientHeight;
@@ -28,7 +28,7 @@ function buildGameGrid() {
 }
 
 function start_game(density) {
-  density = 1 + (densitySlider.value / 100 - .6) / 1.75
+  density = 1 + (densitySlider.value / 100 - .7) / 1.75
   for (let row = 0; row < gameGrid.length; row++) {
     for (let column = 0; column < gameGrid[row].length; column++) {
       gameGrid[row][column] = Math.round(Math.random() * density);
@@ -175,7 +175,13 @@ function conway_mainLoop() {
   canvas.height = footer.clientHeight;
   gameWidth = Math.ceil(canvas.width / cellSize);
   gameHeight = Math.ceil(canvas.height / cellSize);
-  conway_tick();
+  // This checks to make sure the matrix text is on screen, if its not, it doesn't run it
+  let conway_rect = footer.getBoundingClientRect();
+  if (!((conway_rect.x + conway_rect.width) < 0 || (conway_rect.y
+      + conway_rect.height) < 0 || (conway_rect.x
+      > window.innerWidth || conway_rect.y > window.innerHeight))) {
+    conway_tick();
+  }
   requestAnimationFrame(conway_mainLoop);
 }
 
