@@ -22,7 +22,8 @@
 
 <header>
   <div id="header-container">
-    <a href="index.html" id="logo"><img src="images/Logo.png" alt="Logo made by Sydney" style="width:70px"></a>
+    <a href="index.html" id="logo"><img src="images/Logo.png" alt="Logo made by Sydney"
+                                        style="width:70px"></a>
     <nav id="main-nav">
       <div id="main-nav-container">
         <ul id="main-nav-list">
@@ -138,10 +139,12 @@
     <h2>My Knowledge & Experience</h2>
 
     <div class="knowledge-div">
-      <p>I love computer science and programming because of how much there is to learn. Since I
+      <p>
+        I love computer science and programming because of how much there is to learn. Since I
         first learned how to program with Swift, I've been learning new things and have been trying
         to expand my knowledge. In fact, I made this website to learn more about web
-        development!</p>
+        development!
+      </p>
     </div>
 
     <hr>
@@ -169,63 +172,71 @@
         </div>
       </div>
 
-      <div class="language-info-box">
-        <div class="progress-bars">
-          <div class="chart">
-            <span>Confidence:</span>
-            <footer>
-              <div class="progress-bar" id="confidence-bar"></div>
-            </footer>
-          </div>
-          <div class="chart">
-            <span>Enjoyment:</span>
-            <footer>
-              <div class="progress-bar" id="enjoyment-bar"></div>
-            </footer>
-          </div>
-        </div>
-        <p class="language-description">
-          Python was the second major language I learned. It's the one I'm the most comfortable
-          with, and I've used it to make a variety of things.
-        </p>
-        <div class="example-projects">
-          <div class="project" id="project1">
-            <div class="project-inner">
-              <div class="project-top">
-                <a href="random-project.html#Mazer">
-                  <span>Mazer</span>
-                </a>
-                <p>Make a maze and watch as it is solved!</p>
-              </div>
-              <div class="project-bottom">
-                <p>PyQt5</p>
-                <a href="https://github.com/Traptricker/Mazer" target="_blank">
-                  <i class="ion-social-github-outline"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project" id="project2">
-            <div class="project-inner">
-              <div class="project-top">
-                <a href="random-project.html#DCS_Terminal">
-                  <span>DCS Terminal</span>
-                </a>
-                <p>Automatically solves any course on Datacamp!</p>
-              </div>
-              <div class="project-bottom">
-                <p>Selenium</p>
-                <a href="https://github.com/Traptricker/DCS_Terminal" target="_blank">
-                  <i class="ion-social-github-outline"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <div class="outer-language-info-box">
 
+        <div class="language-info-box">
+
+          <div class="progress-bars">
+            <div class="chart">
+              <span>Confidence:</span>
+              <footer>
+                <div class="progress-bar" id="confidence-bar"></div>
+              </footer>
+            </div>
+            <div class="chart">
+              <span>Enjoyment:</span>
+              <footer>
+                <div class="progress-bar" id="enjoyment-bar"></div>
+              </footer>
+            </div>
+          </div>
+
+          <p class="language-description">
+            Python was the second major language I learned. It's the one I'm the most comfortable
+            with, and I've used it to make a variety of things.
+          </p>
+
+          <div class="example-projects">
+            <div class="project" id="project1">
+              <div class="project-inner">
+                <div class="project-top">
+                  <a href="random-project.html#Mazer">
+                    <span>Mazer</span>
+                  </a>
+                  <p>Make a maze and watch as it is solved!</p>
+                </div>
+                <div class="project-bottom">
+                  <p>PyQt5</p>
+                  <a href="https://github.com/Traptricker/Mazer" target="_blank">
+                    <i class="ion-social-github-outline"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project" id="project2">
+              <div class="project-inner">
+                <div class="project-top">
+                  <a href="random-project.html#DCS_Terminal">
+                    <span>DCS Terminal</span>
+                  </a>
+                  <p>Automatically solves any course on Datacamp!</p>
+                </div>
+                <div class="project-bottom">
+                  <p>Selenium</p>
+                  <a href="https://github.com/Traptricker/DCS_Terminal" target="_blank">
+                    <i class="ion-social-github-outline"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </div>
+
 </section>
 
 <section class="contact-section" id="contact-section-id">
@@ -267,7 +278,8 @@
     <button id="start-button" onclick="startGame(1)"><i class="icon ion-refresh"></i></button>
     <input type="range" id="conway-speed-slider">
     <input type="range" id="conway-density-slider">
-    <button id="expand-button" onclick="expandConway()"><i class="icon ion-chevron-down"></i></button>
+    <button id="expand-button" onclick="expandConway()"><i class="icon ion-chevron-down"></i>
+    </button>
   </div>
 </div>
 

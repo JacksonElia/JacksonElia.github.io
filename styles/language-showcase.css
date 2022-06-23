@@ -4,15 +4,16 @@
 }
 
 .knowledge-showcase {
-  height: 600px;
+  height: 40vw;
   padding: 2%;
+  overflow: hidden;
 }
 
 .language-box > h3 {
   text-align: center;
   margin-top: 10%;
   margin-bottom: 3%;
-  font-size: 50px;
+  font-size: 3.5vw;
 }
 
 .language-box {
@@ -37,15 +38,23 @@
   grid-template-columns: 1fr;
 }
 
-.language-info-box {
+.outer-language-info-box {
   float: right;
   width: 65.5%;
   height: 100%;
   background-color: var(--secondaryColor);
+  display: block;
+}
+
+.language-info-box {
+  padding: 2.2vw 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .language > p {
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 .language {
@@ -56,6 +65,7 @@
   margin-right: 4%;
   min-height: 40px;
   max-height: 40px;
+  line-height: 32px;
 }
 
 .language-num {
@@ -77,36 +87,26 @@
   color: var(--mainColor);
 }
 
-.language-info-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.progress-bars {
-  margin-top: 5%;
-}
-
 .chart {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 3%;
+  /*margin-left: 7%;*/
+  /*margin-right: 7%;*/
+  margin-bottom: 1.4vw;
   display: block;
 }
 
 .chart span {
-  font-size: 30px;
+  font-size: 1.9vw;
 }
 
 .chart footer {
-  height: 4px;
+  height: .26vw;
   width: 100%;
   background-color: var(--quaternaryColor);
 }
 
 .progress-bar {
+  margin-top: .35vw;
   height: 100%;
-  margin-top: 3%;
   background-image: linear-gradient(to right, var(--themeColor) 0%, var(--secondaryThemeColor) 100%);
 }
 
@@ -119,16 +119,13 @@
 }
 
 .language-description {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: -3%;
+  /*margin: -1% 10% 3%;*/
+  font-size: 1.9vw;
 }
 
 .example-projects {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-  height: 32%;
+  padding-top: 2.2vw;
+  padding-bottom: 2.2vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -139,7 +136,8 @@
   width: 100%;
   height: 100%;
   border: 3px solid var(--themeColor);
-  border-radius: 20px;
+  border-radius: 1.9vw;
+  display: block;
 }
 
 .project-inner {
@@ -147,11 +145,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 28px 40px;
+  padding: 2.2vw 2.6vw;
 }
 
 .project-top span {
-  font-size: 27px;
+  font-size: 1.9vw;
   font-family: var(--secondaryFont);
 }
 
@@ -160,8 +158,9 @@
 }
 
 .project-top p {
-  margin: 10px 1px;
-  font-size: 15px;
+  margin: .6vw 1px;
+  font-size: .95vw;
+  line-height: 1vw;
   font-family: var(--secondaryFont);
   color: var(--tertiaryColor);
 }
@@ -175,12 +174,12 @@
 .project-bottom p {
   margin-top: 8px;
   margin-bottom: 8px;
-  font-size: 15px;
+  font-size: .95vw;
   color: var(--quaternaryColor);
 }
 
 .project-inner i {
-  font-size: 30px;
+  font-size: 2vw;
   color: var(--themeColor);
 }
 

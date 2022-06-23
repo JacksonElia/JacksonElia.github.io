@@ -169,7 +169,7 @@ function setLanguageInfo(language) {
         <p class="language-description">
           Swift was the first language I learned, but I lost interest overtime
           after I learned Python. I got really "good" at it, even doing machine
-          learning! Now I'm rusty.
+          learning!
         </p>
         <div class="example-projects">
           <div class="project" id="project1">
