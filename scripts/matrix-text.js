@@ -32,15 +32,13 @@ function matrixTextTick() {
   }
 
   let speed = Math.round(matrixSpeedSlider.value / 5) + 3;
-  console.log(speed);
   let scrollsToRemove = [];
   for (let scroll of
       document.querySelectorAll(".matrix-scroll,.matrix-scroll-shiny")) {
     let currentY = parseFloat(scroll.style.top);
     let scale = parseFloat(scroll.style.transform.replace("scale(", ""))
     scroll.style.top = `${currentY + speed}px`;
-    if (parseFloat(scroll.style.top)
-        > matrixTextBox.getBoundingClientRect().height + 1000) {
+    if (parseFloat(scroll.style.top) > speed * 150) {
       scrollsToRemove.push(scroll);
     }
   }
