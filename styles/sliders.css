@@ -1,0 +1,77 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  width: 130px;
+  cursor: pointer;
+  border-radius: 0; /* iOS */
+}
+
+input[type="range"]:hover {
+  filter: brightness(130%);
+}
+
+::-webkit-slider-runnable-track {
+  background: var(--quaternaryColor);
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ * 2. Shadow is negative the full width of the input and has a spread
+ *    of the width of the input.
+ */
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px; /* 1 */
+  height: 28px;
+  background: var(--mainColor);
+  box-shadow: -130px 0 0 130px var(--blendedColor); /* 2 */
+  border: 1px solid black;
+}
+
+::-moz-range-track {
+  height: 28px;
+  background: var(--quaternaryColor);
+}
+
+::-moz-range-thumb {
+  background: var(--mainColor);
+  /*height: 28px;*/
+  width: 30px;
+  border: 1px solid var(--mainColor);
+  border-radius: 0 !important;
+  box-shadow: -200px 0 0 200px black;
+  box-sizing: border-box;
+}
+
+::-ms-fill-lower {
+  background: var(--blendedColor);
+}
+
+::-ms-thumb {
+  background: var(--mainColor);
+  /*border: 2px solid #999;*/
+  height: 28px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+::-ms-ticks-after {
+  display: none;
+}
+
+::-ms-ticks-before {
+  display: none;
+}
+
+::-ms-track {
+  background: var(--quaternaryColor);
+  color: transparent;
+  height: 28px;
+  border: none;
+}
+
+::-ms-tooltip {
+  display: none;
+}
