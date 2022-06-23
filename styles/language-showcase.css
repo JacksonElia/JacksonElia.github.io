@@ -63,9 +63,8 @@
   justify-content: space-between;
   margin-left: 4%;
   margin-right: 4%;
-  min-height: 40px;
-  max-height: 40px;
-  line-height: 32px;
+  height: 2.8vw;
+  line-height: 2.3vw;
 }
 
 .language-num {
@@ -79,7 +78,7 @@
 
 .language:hover {
   background-color: var(--blendedColor);
-  border-radius: 20px;
+  border-radius: 1.9vw;
   filter: brightness(130%);
 }
 
