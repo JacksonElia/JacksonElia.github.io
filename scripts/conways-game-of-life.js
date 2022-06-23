@@ -1,6 +1,7 @@
 const footer = document.getElementsByClassName("footer")[0];
 const speedSlider = document.getElementById("speed-slider");
 const densitySlider = document.getElementById("density-slider");
+const expandButton = document.getElementById("expand-button");
 const canvas = document.getElementById("conway-footer");
 const drawingContext = canvas.getContext('2d');
 
@@ -14,8 +15,12 @@ let gameWidth = Math.ceil(canvas.width / cellSize);
 if (gameWidth > 1) gameWidth -= 1;
 let gameHeight = Math.ceil(canvas.height / cellSize);
 
-let density = 1;
-let speed = 0;
+
+let expanded = false;
+let expandingCount = 0;
+
+let expanding = false;
+let shrinking = false;
 
 function buildGameGrid() {
   let newGameGrid = [];
@@ -28,8 +33,8 @@ function buildGameGrid() {
   return newGameGrid;
 }
 
-function start_game(density) {
-  density = 1 + (densitySlider.value / 100 - .7) / 1.75
+function start_game() {
+  let density = 1 + (densitySlider.value / 100 - .7) / 1.75
   for (let row = 0; row < gameGrid.length; row++) {
     for (let column = 0; column < gameGrid[row].length; column++) {
       gameGrid[row][column] = Math.round(Math.random() * density);
@@ -166,12 +171,21 @@ function conway_tick() {
 }
 
 function expand_conway() {
-  footer.style.height = "1000px";
+  expanded = !expanded;
+  if (expanded) {
+    footer.style.height = "100vh";
+    expandButton.innerHTML = `<i class="icon ion-chevron-up"></i>`
+    expanding = true;
+  } else {
+    expandButton.innerHTML = `<i class="icon ion-chevron-down"></i>`
+    shrinking = true;
+  }
 }
 
 // The main loop for Conway's game of life
 function conway_mainLoop() {
   // Does this in case the user changed the size of the window
+  console.log(gameHeight);
   canvas.width = footer.clientWidth;
   canvas.height = footer.clientHeight;
   gameWidth = Math.ceil(canvas.width / cellSize);
@@ -182,7 +196,30 @@ function conway_mainLoop() {
   if (!((conway_rect.x + conway_rect.width) < 0 || (conway_rect.y
       + conway_rect.height) < 0 || (conway_rect.x
       > window.innerWidth || conway_rect.y > window.innerHeight))) {
-    conway_tick();
+    if (shrinking) {
+      expandingCount++;
+      footer.style.height = "300px";
+      canvas.width = footer.clientWidth;
+      canvas.height = footer.clientHeight;
+      gameWidth = Math.ceil(canvas.width / cellSize) - 1;
+      gameHeight = Math.ceil(canvas.height / cellSize);
+      if (expandingCount >= 30) {
+        shrinking = false;
+        expandingCount = 0;
+        gameGrid = buildGameGrid();
+        start_game();
+      }
+    } else {
+      conway_tick();
+    }
+    if (expanding) {
+      expandingCount++;
+      expandButton.scrollIntoView();
+      if (expandingCount >= 30) {
+        expanding = false;
+        expandingCount = 0;
+      }
+    }
   }
   requestAnimationFrame(conway_mainLoop);
 }

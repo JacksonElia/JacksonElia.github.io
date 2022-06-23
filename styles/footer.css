@@ -64,7 +64,7 @@
   height: 30px;
   width: 30px;
   position: absolute;
-  top: 0;
+  bottom: 270px;
   right: 0;
   background-color: var(--mainColor);
   text-align: center;
@@ -76,17 +76,29 @@
 }
 
 #start-button:hover i {
-  font-size: 22px;
+  font-size: 24px;
   filter: brightness(170%);
 }
 
 #expand-button {
-  height: 20px;
+  height: 25px;
   width: 50px;
   bottom: 0;
   position: absolute;
-  left: 50%;
-  right: 50%;
+  left: calc(50% - 25px);
+  right: calc(50% - 25px);
+  background-color: var(--mainColor);
+  text-align: center;
+}
+
+#expand-button i {
+  font-size: 20px;
+  color: var(--blendedColor);
+}
+
+#expand-button:hover i {
+  font-size: 22px;
+  filter: brightness(170%);
 }
 
 #speed-slider {
@@ -95,7 +107,7 @@
   -o-transform:rotate(90deg);
   transform:rotate(90deg);
   position: absolute;
-  top: 84px;
+  bottom: 186px;
   right: -52px;
 }
 
@@ -105,6 +117,6 @@
   -o-transform:rotate(90deg);
   transform:rotate(90deg);
   position: absolute;
-  top: 220px;
+  bottom: 50px;
   right: -52px;
 }
