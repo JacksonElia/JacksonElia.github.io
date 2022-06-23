@@ -33,7 +33,7 @@ function buildGameGrid() {
   return newGameGrid;
 }
 
-function start_game() {
+function startGame() {
   let density = 1 + (conwayDensitySlider.value / 100 - .7) / 1.75
   for (let row = 0; row < gameGrid.length; row++) {
     for (let column = 0; column < gameGrid[row].length; column++) {
@@ -64,7 +64,7 @@ function showGameGrid(gameGrid) {
 
 let conway_frameKeep = 0;
 
-function conway_tick() {
+function conwayTick() {
   conway_frameKeep++;
   if (conway_frameKeep % Math.round(23 - (conwaySpeedSlider.value / 5)) === 0) {
     let nextGameGrid = buildGameGrid();
@@ -171,7 +171,7 @@ function conway_tick() {
   showGameGrid(gameGrid);
 }
 
-function expand_conway() {
+function expandConway() {
   expanded = !expanded;
   if (expanded) {
     footer.style.height = "100vh";
@@ -184,7 +184,7 @@ function expand_conway() {
 }
 
 // The main loop for Conway's game of life
-function conway_mainLoop() {
+function conwayMainLoop() {
   // Does this in case the user changed the size of the window
   canvas.width = footer.clientWidth;
   canvas.height = footer.clientHeight;
@@ -207,10 +207,10 @@ function conway_mainLoop() {
         shrinking = false;
         expandingCount = 0;
         gameGrid = buildGameGrid();
-        start_game();
+        startGame();
       }
     } else {
-      conway_tick();
+      conwayTick();
     }
     if (expanding) {
       expandingCount++;
@@ -221,10 +221,10 @@ function conway_mainLoop() {
       }
     }
   }
-  requestAnimationFrame(conway_mainLoop);
+  requestAnimationFrame(conwayMainLoop);
 }
 
 let gameGrid = buildGameGrid();
-start_game();
+startGame();
 
-requestAnimationFrame(conway_mainLoop);
+requestAnimationFrame(conwayMainLoop);
