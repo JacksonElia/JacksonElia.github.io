@@ -47,6 +47,7 @@ function showGameGrid(gameGrid) {
   drawingContext.fillStyle = backgroundColor;
   drawingContext.fillRect(0, 0, canvas.width, canvas.height);
   // Draws the living cells on the canvas
+  drawingContext.globalAlpha = 0.7;
   drawingContext.fillStyle = cellColor;
   // Goes through the gameGrid by row then by column
   for (let row = 0; row < gameGrid.length; row++) {
