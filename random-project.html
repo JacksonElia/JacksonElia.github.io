@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="styles/random-project.css">
   <link rel="stylesheet" type="text/css" href="styles/buttons.css">
   <link rel="stylesheet" type="text/css" href="styles/footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/sliders.css">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
@@ -1015,6 +1016,7 @@
 </section>
 
 <div class="footer">
+  <canvas id="conway-footer"></canvas>
   <footer>
     <div class="social">
       <a href="https://www.instagram.com/jackgeorgeelia/" target="_blank"><i
@@ -1033,6 +1035,12 @@
     </ul>
     <p class="copyright">Jackson Elia © 2022</p>
   </footer>
+  <div id="conway-footer-menu">
+    <button id="start-button" onclick="start_game(1)"><i class="icon ion-refresh"></i></button>
+    <input type="range" id="speed-slider">
+    <input type="range" id="density-slider">
+    <button id="expand-button" onclick="expand_conway()"><i class="icon ion-chevron-down"></i></button>
+  </div>
 </div>
 
 <!--  Runs the script when the page loads  -->
@@ -1057,6 +1065,7 @@
     loadPage()
   })
 </script>
+<script src="scripts/conways-game-of-life.js"></script>
 
 </body>
 </html>
