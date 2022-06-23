@@ -6,6 +6,7 @@
 }
 
 #matrix-text h1 {
+  z-index: 2;
   position: absolute!important;
   top: 50%!important;
   left: 50%!important;
@@ -18,6 +19,7 @@
   background-color: var(--themeColor);
   position: absolute;
   mix-blend-mode: screen;
+  z-index: 1;
 }
 
 .matrix-scroll-shiny {
@@ -25,4 +27,30 @@
   background-image: linear-gradient(to top, var(--secondaryThemeColor) 0%, var(--themeColor) 100%);
   position: absolute;
   mix-blend-mode: screen;
+}
+
+#matrix-speed-slider {
+  position: absolute;
+  bottom: 0;
+  right: 135px;
+  width: 130px;
+  z-index: 3;
+}
+
+#matrix-density-slider {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  z-index: 3;
+}
+
+#matrix-header-menu-background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 33px;
+  width: 271px;
+  background-color: var(--secondaryColor);
+  z-index: 2;
 }

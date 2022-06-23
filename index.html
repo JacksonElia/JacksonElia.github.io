@@ -44,6 +44,12 @@
       <h1>Hi, I'm Jack.</h1>
     </div>
 
+    <div class="matrix-header-menu">
+      <input type="range" id="matrix-speed-slider">
+      <input type="range" id="matrix-density-slider" value="80">
+      <div id="matrix-header-menu-background"></div>
+    </div>
+
   </div>
 
 </section>
@@ -259,8 +265,8 @@
   </footer>
   <div id="conway-footer-menu">
     <button id="start-button" onclick="start_game(1)"><i class="icon ion-refresh"></i></button>
-    <input type="range" id="speed-slider">
-    <input type="range" id="density-slider">
+    <input type="range" id="conway-speed-slider">
+    <input type="range" id="conway-density-slider">
     <button id="expand-button" onclick="expand_conway()"><i class="icon ion-chevron-down"></i></button>
   </div>
 </div>

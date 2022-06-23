@@ -1,4 +1,6 @@
 const matrixTextBox = document.getElementById("matrix-text")
+const matrixSpeedSlider = document.getElementById("matrix-speed-slider");
+const matrixDensitySlider = document.getElementById("matrix-density-slider");
 
 function createScroll(x, y, height, scale, shiny) {
   let scroll = document.createElement("div");
@@ -14,12 +16,12 @@ function createScroll(x, y, height, scale, shiny) {
   document.querySelector("#matrix-text").appendChild(scroll);
 }
 
-let matrix_text_frameKeep = 0;
+let matrix_frameKeep = 0;
 
 function matrix_text_tick() {
-  matrix_text_frameKeep++;
-  if (matrix_text_frameKeep % 6 === 0) {
-    let height = Math.floor(Math.random() * 600) + 100;
+  matrix_frameKeep++;
+  if (matrix_frameKeep % Math.round(40 - (36 * matrixDensitySlider.value / 100)) === 0) {
+   let height = Math.floor(Math.random() * 600) + 100;
     createScroll(
         Math.floor(Math.random() * matrixTextBox.offsetWidth),
         -height - 100,
@@ -29,7 +31,8 @@ function matrix_text_tick() {
     );
   }
 
-  let speed = 10;
+  let speed = Math.round(matrixSpeedSlider.value / 5) + 3;
+  console.log(speed);
   let scrollsToRemove = [];
   for (let scroll of
       document.querySelectorAll(".matrix-scroll,.matrix-scroll-shiny")) {

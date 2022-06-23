@@ -101,22 +101,24 @@
   filter: brightness(170%);
 }
 
-#speed-slider {
-  -webkit-transform:rotate(90deg);
-  -moz-transform:rotate(90deg);
-  -o-transform:rotate(90deg);
-  transform:rotate(90deg);
+#conway-speed-slider {
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -o-transform:rotate(-90deg);
+  transform:rotate(-90deg);
   position: absolute;
   bottom: 186px;
   right: -52px;
+  width: 130px;
 }
 
-#density-slider {
-  -webkit-transform:rotate(90deg);
-  -moz-transform:rotate(90deg);
-  -o-transform:rotate(90deg);
-  transform:rotate(90deg);
+#conway-density-slider {
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -o-transform:rotate(-90deg);
+  transform:rotate(-90deg);
   position: absolute;
   bottom: 50px;
   right: -52px;
+  width: 130px;
 }

@@ -1,6 +1,6 @@
 const footer = document.getElementsByClassName("footer")[0];
-const speedSlider = document.getElementById("speed-slider");
-const densitySlider = document.getElementById("density-slider");
+const conwaySpeedSlider = document.getElementById("conway-speed-slider");
+const conwayDensitySlider = document.getElementById("conway-density-slider");
 const expandButton = document.getElementById("expand-button");
 const canvas = document.getElementById("conway-footer");
 const drawingContext = canvas.getContext('2d');
@@ -34,7 +34,7 @@ function buildGameGrid() {
 }
 
 function start_game() {
-  let density = 1 + (densitySlider.value / 100 - .7) / 1.75
+  let density = 1 + (conwayDensitySlider.value / 100 - .7) / 1.75
   for (let row = 0; row < gameGrid.length; row++) {
     for (let column = 0; column < gameGrid[row].length; column++) {
       gameGrid[row][column] = Math.round(Math.random() * density);
@@ -66,7 +66,7 @@ let conway_frameKeep = 0;
 
 function conway_tick() {
   conway_frameKeep++;
-  if (conway_frameKeep % Math.round(23 - (speedSlider.value / 5)) === 0) {
+  if (conway_frameKeep % Math.round(23 - (conwaySpeedSlider.value / 5)) === 0) {
     let nextGameGrid = buildGameGrid();
     for (let row = 0; row < gameGrid.length; row++) {
       for (let column = 0; column < gameGrid[row].length; column++) {
@@ -186,7 +186,6 @@ function expand_conway() {
 // The main loop for Conway's game of life
 function conway_mainLoop() {
   // Does this in case the user changed the size of the window
-  console.log(gameHeight);
   canvas.width = footer.clientWidth;
   canvas.height = footer.clientHeight;
   gameWidth = Math.ceil(canvas.width / cellSize);
