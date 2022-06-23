@@ -13,6 +13,10 @@
   --secondaryFont: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
+* {
+  transition: .5s;
+}
+
 html, body {
   padding: 0;
   margin: auto;
