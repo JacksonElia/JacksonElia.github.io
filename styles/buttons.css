@@ -13,7 +13,7 @@
   padding: 4px;
   position: relative;
   text-decoration: none;
-  width: 200px;
+  min-width: 200px;
 }
 
 .button1span {
