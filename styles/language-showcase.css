@@ -4,7 +4,7 @@
 }
 
 .knowledge-showcase {
-  height: 40vw;
+  height: 43vw;
   padding: 2%;
   overflow: hidden;
 }
@@ -47,10 +47,12 @@
 }
 
 .language-info-box {
-  padding: 2.2vw 2.5vw;
+  padding: 2.5vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 
 .language > p {
@@ -87,10 +89,8 @@
 }
 
 .chart {
-  /*margin-left: 7%;*/
-  /*margin-right: 7%;*/
-  margin-bottom: 1.4vw;
   display: block;
+  width: 100%;
 }
 
 .chart span {
@@ -101,6 +101,14 @@
   height: .26vw;
   width: 100%;
   background-color: var(--quaternaryColor);
+}
+
+.progress-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1vw;
+  width: 100%;
 }
 
 .progress-bar {
@@ -123,11 +131,10 @@
 }
 
 .example-projects {
-  padding-top: 2.2vw;
-  padding-bottom: 2.2vw;
+  /*padding-top: 2.2vw;*/
+  /*padding-bottom: 2.2vw;*/
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   gap: 5%
 }
 
