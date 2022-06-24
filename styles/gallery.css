@@ -1,5 +1,7 @@
-* {
-  box-sizing: border-box;
+.inner-portfolio-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vw;
 }
 
 /* Adds the tint to the image */
@@ -16,31 +18,16 @@
   font-size: 22px;
 }
 
-.row {
-  margin: 0 -8px;
-}
-
-/* Adds padding in between the cells */
-.row > .cell {
+.cell {
+  width: 100%;
+  height: 100%;
+  transition: .4s;
   padding: 1%;
 }
 
-/* Makes 3 columns */
-.cell {
-  float: left;
-  width: 33.3333333%;
-  transition: .4s;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
 .content {
+  width: 100%;
+  height: 100%;
   background-color: var(--secondaryColor);
   padding: 12px;
 }
@@ -53,16 +40,18 @@
   filter: none;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
+@media screen and (max-width: 1000px) {
+  .inner-portfolio-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .inner-portfolio-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vw;
   }
 }
