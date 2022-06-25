@@ -12,7 +12,7 @@
 }
 
 #logo {
-  width: 200px;
+  width: 70px;
   z-index: 5;
 }
 
@@ -71,7 +71,7 @@
   z-index: 4;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 820px) {
   #header-background {
     display: block;
     position: absolute;

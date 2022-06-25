@@ -157,4 +157,9 @@ hr {
     margin-right: auto;
     margin-top: 3.5vw;
   }
+
+  h1 {
+    font-size: 15vw;
+  }
+
 }
