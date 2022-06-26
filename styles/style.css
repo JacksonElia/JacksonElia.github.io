@@ -163,4 +163,14 @@ hr {
   h2 {
     font-size: 11vw;
   }
+
+  p {
+    font-size: 6vw;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
 }

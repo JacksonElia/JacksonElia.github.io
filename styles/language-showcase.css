@@ -267,6 +267,11 @@
     padding-right: 5%;
   }
 
+  .knowledge-div {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
   .language-box > h3 {
     padding-top: 2%;
     font-size: calc(6vw + 65%);
