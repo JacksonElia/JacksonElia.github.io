@@ -76,6 +76,7 @@
   right: 0;
   background-color: var(--mainColor);
   text-align: center;
+  border: 2px solid black;
 }
 
 #start-button i {
@@ -97,6 +98,7 @@
   right: calc(50% - 25px);
   background-color: var(--mainColor);
   text-align: center;
+  border: 2px solid black;
 }
 
 #expand-button i {
