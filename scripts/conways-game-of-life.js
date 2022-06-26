@@ -7,7 +7,15 @@ const drawingContext = canvas.getContext('2d');
 
 const backgroundColor = "#202020";
 const cellColor = "#FF3854";
-const cellSize = 40;
+let cellSize = 40;
+// Makes cell size smaller if the user is on a small device
+if (screen.width < 500) {
+  cellSize = 20;
+} else if (screen.width < 700) {
+  cellSize = 30;
+} else if (screen.width < 1000) {
+  cellSize = 35;  
+}
 
 canvas.width = footer.clientWidth;
 canvas.height = footer.clientHeight;
