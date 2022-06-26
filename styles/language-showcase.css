@@ -250,6 +250,9 @@
     font-size: 10px;
   }
 
+  .project-inner i {
+    font-size: 18px;
+  }
 
   .project-top {
     font-size: 16px;
@@ -272,6 +275,27 @@
     padding-right: 2%;
   }
 
+  .knowledge-showcase {
+    height: calc(30vw + 200px + 400px);
+  }
+
+  .language-box {
+    height: calc(30vw + 200px);
+  }
+
+  .language {
+    height: calc(4vw + 40%);
+    line-height: calc(2.6vw + 140%);
+  }
+
+  .language > p {
+    font-size: calc(3vw + 65%);
+  }
+
+  .outer-language-info-box {
+    height: 400px;
+  }
+
   .language-box > h3 {
     padding-top: 2%;
     font-size: calc(6vw + 65%);
@@ -283,6 +307,10 @@
 
   .language-info-box span, .language-description {
     font-size: calc(1.8vw + 70%);
+  }
+
+  .project-inner {
+    padding: 12px 16px;
   }
 
   .project-inner p {

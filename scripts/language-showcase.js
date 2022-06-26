@@ -108,8 +108,8 @@ function setLanguageInfo(language) {
           </div>
         </div>
         <p class="language-description">
-          Java was the third language I learned. I started getting better at it 
-          and more interested in it because it's the language my robotics team uses.
+          Java was the third language I learned. I started getting better and 
+          more interested in it because it's what my robotics team uses.
         </p>
         <div class="example-projects">
           <div class="project" id="project1">
@@ -176,9 +176,9 @@ function setLanguageInfo(language) {
             <div class="project-inner">
               <div class="project-top">
                 <a href="https://traptricker.github.io/random-project.html#William_Whitakers_Words_App">
-                  <span>William Whitaker's Words App</span>
+                  <span>William Whitaker's App</span>
                 </a>
-                <p>Uses William Whitaker's Words to translate Latin words. It
+                <p>Uses William Whitaker's to translate Latin words. It
                 uses web-scrapping to get the translation.</p>
               </div>
               <div class="project-bottom">
