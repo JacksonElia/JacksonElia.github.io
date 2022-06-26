@@ -146,21 +146,21 @@ hr {
     display: block;
   }
 
-  .portfolio-section a {
+  .portfolio-section a, .contact-section a {
     width: 200px;
     margin-right: auto;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-  }
-
-  .contact-section a {
-    width: 200px;
-    margin-right: auto;
-    margin-top: 3.5vw;
+    margin-top: 35px;
+    margin-bottom: 35px;
   }
 
   h1 {
     font-size: 15vw;
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 11vw;
+  }
 }

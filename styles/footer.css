@@ -8,16 +8,21 @@
 }
 
 .social a {
-  font-size: 3vw;
+  /*font-size: 3vw;*/
+  font-size: 40px;
   width: 10%;
   height: 10%;
-  line-height: 5vw;
+  /*line-height: 5vw;*/
   display: inline-block;
   text-align: center;
   margin-top: 4%;
   color: var(--mainTextColor);
   opacity: .6;
-  transition: 10s;
+  /*transition: 10s;*/
+}
+
+.list-inline {
+  padding: 0 30px;
 }
 
 .footer ul {
@@ -31,14 +36,15 @@
 .footer li {
   padding: 20px 10px;
   display: inline-block;
-  font-size: 2vw;
+  /*font-size: 2vw;*/
+  font-size: 25px;
 }
 
 .footer ul a {
   text-decoration:none;
   color: var(--mainTextColor);
   opacity: .7;
-  transition: 10s;
+  /*transition: 10s;*/
   /*  TODO: fix flickering  */
 }
 
@@ -47,9 +53,10 @@
 }
 
 .copyright {
-  font-size: 1.3vw;
+  font-size: 15px;
   opacity: .6;
-  margin-top: 2vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #conway-footer {
@@ -122,4 +129,22 @@
   bottom: 50px;
   right: -52px;
   width: 130px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .social a {
+    font-size: 8vw;
+  }
+
+  .footer li {
+    font-size: 5vw;
+    padding-bottom: 0;
+  }
+
+  .copyright {
+    font-size: 3vw;
+    opacity: .6;
+  }
+
 }
