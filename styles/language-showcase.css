@@ -6,8 +6,8 @@
 
 .language-box > h3 {
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 3%;
+  margin-top: 2.3vw;
+  margin-bottom: .8vw;
   font-size: 3.5vw;
 }
 
@@ -26,7 +26,7 @@
 .languages {
   width: 90%;
   height: 90%;
-  margin: 10% 5% 5%;
+  margin: 15% 5% 5%;
   background-color: transparent;
   display: grid;
 
@@ -185,4 +185,102 @@
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+  .knowledge-showcase {
+    height: 800px;
+  }
+
+  .language-box {
+    float: none;
+    width: 100%;
+    height: 350px;
+  }
+
+  .language-box > h3 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .languages {
+    margin: 0;
+    width: 100%;
+    padding: 5% 5% 0 5%;
+  }
+
+  .language {
+    height: 40px;
+    line-height: 33px;
+  }
+
+  .language > p {
+    font-size: 20px;
+  }
+
+  .outer-language-info-box {
+    float: none;
+    width: 100%;
+    height: 450px;
+  }
+
+  .language-info-box {
+    padding: 9%;
+    height: 96%;
+  }
+
+  .language-info-box span, .language-description {
+    font-size: 19px;
+  }
+
+  .progress-bar {
+    margin-top: 3px;
+  }
+
+  .project {
+    border-radius: 15px;
+  }
+
+  .project-inner {
+    height: 100%;
+    /*justify-content: space-between;*/
+  }
+
+  .project-inner p {
+    font-size: 10px;
+  }
+
+
+  .project-top {
+    font-size: 16px;
+  }
+
+  .project-top p {
+    line-height: 10px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  #knowledge_section_id {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .language-box > h3 {
+    padding-top: 2%;
+    font-size: calc(6vw + 65%);
+  }
+
+  .language-info-box {
+    padding-top: 2%;
+  }
+
+  .language-info-box span, .language-description {
+    font-size: calc(1.8vw + 70%);
+  }
+
+  .project-inner p {
+    font-size: calc(1.5vw + 30%);
+  }
 }
