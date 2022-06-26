@@ -31,14 +31,14 @@ function matrixTextTick() {
     );
   }
 
-  let speed = Math.round(matrixSpeedSlider.value / 5) + 3;
+  let speed = Math.round(matrixSpeedSlider.value / 4) + 2;
   let scrollsToRemove = [];
   for (let scroll of
       document.querySelectorAll(".matrix-scroll,.matrix-scroll-shiny")) {
     let currentY = parseFloat(scroll.style.top);
     let scale = parseFloat(scroll.style.transform.replace("scale(", ""))
     scroll.style.top = `${currentY + speed}px`;
-    if (parseFloat(scroll.style.top) > speed * 150) {
+    if (parseFloat(scroll.style.top) > speed * 100 + 700) {
       scrollsToRemove.push(scroll);
     }
   }
