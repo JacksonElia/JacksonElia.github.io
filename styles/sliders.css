@@ -2,7 +2,7 @@ input[type="range"] {
   -webkit-appearance: none;
   position: relative;
   overflow: hidden;
-  height: 28px;
+  height: 30px;
   width: 130px;
   cursor: pointer;
   border-radius: 0; /* iOS */
@@ -24,21 +24,21 @@ input[type="range"]:hover {
  */
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 28px; /* 1 */
-  height: 28px;
+  width: 30px; /* 1 */
+  height: 30px;
   background: var(--mainColor);
   box-shadow: -130px 0 0 130px var(--blendedColor); /* 2 */
   border: 1px solid black;
 }
 
 ::-moz-range-track {
-  height: 28px;
+  height: 30px;
   background: var(--quaternaryColor);
 }
 
 ::-moz-range-thumb {
   background: var(--mainColor);
-  /*height: 28px;*/
+  /*height: 30px;*/
   width: 30px;
   border: 1px solid var(--mainColor);
   border-radius: 0 !important;
@@ -53,7 +53,7 @@ input[type="range"]:hover {
 ::-ms-thumb {
   background: var(--mainColor);
   /*border: 2px solid #999;*/
-  height: 28px;
+  height: 30px;
   width: 20px;
   box-sizing: border-box;
 }
@@ -69,7 +69,7 @@ input[type="range"]:hover {
 ::-ms-track {
   background: var(--quaternaryColor);
   color: transparent;
-  height: 28px;
+  height: 30px;
   border: none;
 }
 
