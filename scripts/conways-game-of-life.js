@@ -14,13 +14,17 @@ if (screen.width < 500) {
 } else if (screen.width < 700) {
   cellSize = 30;
 } else if (screen.width < 1000) {
-  cellSize = 35;  
+  cellSize = 35;
 }
 
 canvas.width = footer.clientWidth;
 canvas.height = footer.clientHeight;
 let gameWidth = Math.ceil(canvas.width / cellSize);
-if (gameWidth > 1) gameWidth -= 1;
+if (screen.width < 700) {
+  gameWidth -= 2
+} else if (screen.width < 1000) {
+  gameWidth -= 1
+}
 let gameHeight = Math.ceil(canvas.height / cellSize);
 
 
@@ -197,7 +201,14 @@ function conwayMainLoop() {
   canvas.width = footer.clientWidth;
   canvas.height = footer.clientHeight;
   gameWidth = Math.ceil(canvas.width / cellSize);
-  if (gameWidth > 1) gameWidth -= 1;  // Stops the menu buttons from being cluttered
+  // Stops the menu buttons from being cluttered
+  if (gameWidth > 2) {
+    if (screen.width < 700) {
+      gameWidth -= 2
+    } else if (screen.width < 1000) {
+      gameWidth -= 1
+    }
+  }
   gameHeight = Math.ceil(canvas.height / cellSize);
   // This checks to make sure the matrix text is on screen, if its not, it doesn't run it
   let conway_rect = footer.getBoundingClientRect();
