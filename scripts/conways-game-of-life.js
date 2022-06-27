@@ -220,9 +220,16 @@ function conwayMainLoop() {
       footer.style.height = "300px";
       canvas.width = footer.clientWidth;
       canvas.height = footer.clientHeight;
-      gameWidth = Math.ceil(canvas.width / cellSize) - 1;
+      gameWidth = Math.ceil(canvas.width / cellSize);
+      if (gameWidth > 2) {
+        if (screen.width < 700) {
+          gameWidth -= 2
+        } else if (screen.width < 1000) {
+          gameWidth -= 1
+        }
+      }
       gameHeight = Math.ceil(canvas.height / cellSize);
-      if (expandingCount >= 30) {
+      if (expandingCount >= 50) {
         shrinking = false;
         expandingCount = 0;
         gameGrid = buildGameGrid();
