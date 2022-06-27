@@ -48,9 +48,9 @@ function setLanguageInfo(language) {
           </div>
         </div>
         <p class="language-description">
-          Python was the second major language I learned. It's the one I'm the most comfortable
-          with, and I've used it to make a variety of things.
-        </p>
+            Python was the second language I learned. It's the one I'm most comfortable with, and 
+            I've used it to make a variety of things.
+          </p>
         <div class="example-projects">
           <div class="project" id="project1">
             <div class="project-inner">
