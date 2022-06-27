@@ -172,7 +172,7 @@ ol li::marker {
   }
 
   .scroll-button {
-    width: 13vw;
+    min-width: 13vw;
     height: 25vw;
     font-size: 10vw;
     color: var(--mainColor);
@@ -230,6 +230,10 @@ ol li::marker {
 
   .call-to-action-box {
     margin-top: 23px;
+  }
+
+  .additional-projects-row {
+    overflow-x: auto;
   }
 
 }
