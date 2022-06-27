@@ -17,6 +17,10 @@
   color: var(--themeColor);
 }
 
+hr {
+  margin-top: 70px;
+}
+
 .about-second-block span {
   color: var(--themeColor);
 }
@@ -57,4 +61,104 @@
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .about-first-block p, .about-first-block li {
+    font-size: 3.5vw;
+  }
+
+  .text-list p, .text-list span {
+    font-size: 2vw;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .about-first-block {
+    display: block;
+  }
+
+  .text-image {
+    display: block;
+  }
+
+  .about-picture {
+    height: 80vw;
+  }
+
+  .image-infotext {
+    height: 90vw;
+  }
+
+  #about-img-1 {
+    max-width: 70%;
+    padding-top: 5%;
+    height: 96%;
+  }
+
+  #about-img-3 {
+    max-width: 70%;
+    padding-top: 5%;
+    height: 90%;
+  }
+
+  .about-first-block p, .about-first-block li {
+    font-size: 35px;
+  }
+
+  .text-list p, .text-list span, .image-infotext p, .about-third-block p {
+    font-size: 30px;
+  }
+
+  .page-section {
+    padding: 130px 10vw 3vw;
+  }
+
+  .subtitle {
+    font-size: 55px;
+    padding-top: 0;
+    margin-top: 60px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .page-section h2 {
+    font-size: 16vw;
+  }
+
+
+
+  .about-first-block p, .about-first-block li {
+    font-size: 7vw;
+  }
+
+  .text-list p, .text-list span, .image-infotext p, .about-third-block p {
+    font-size: 6vw;
+  }
+
+  .about-second-block .subtitle {
+    font-size: 11vw;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .about-third-block .subtitle {
+    font-size: 11vw;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .about-quick-facts {
+    padding-inline-start: 8vw;
+  }
+
+  hr {
+    margin: 12vw 0 20px 0;
+  }
+
 }
