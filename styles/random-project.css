@@ -41,6 +41,12 @@
   max-width: 300px;
 }
 
+iframe {
+  display: block;
+  height: 315px;
+  width: 420px;
+}
+
 .thing-learned-item p {
   color: var(--tertiaryColor);
 }
@@ -100,14 +106,14 @@
 }
 
 .additional-project-image {
-  margin: 10px;
-  height: 160px;
-  width: 160px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .project-icon-image {
-  height: 160px;
-  width: 160px;
+  height: 100%;
+  width: 100%;
   transition: .4s;
   filter: sepia(100%) saturate(150%) brightness(60%) hue-rotate(-50deg);
 }
@@ -118,4 +124,110 @@
 
 ol li::marker {
   color: var(--blendedColor);
+}
+
+@media screen and (max-width: 1000px) {
+
+  .page-section {
+    padding: 130px 10vw 3vw;
+  }
+
+  .random-project-second-block h3 {
+    margin-bottom: 0;
+  }
+
+  .random-project-second-block p {
+    padding-top: 6%;
+    padding-bottom: 1%  ;
+  }
+
+  .random-project-text-video iframe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .random-project-text-video {
+    display: block;
+  }
+
+  .call-to-action-box {
+    display: block;
+  }
+
+  .call-to-action-box .button1 {
+    width: 200px;
+    margin-right: auto;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .random-project-sixth-block {
+    height: 65vw;
+  }
+
+  .additional-projects-block {
+    height: 33vw;
+  }
+
+  .scroll-button {
+    width: 13vw;
+    height: 25vw;
+    font-size: 10vw;
+  }
+
+  .additional-projects-row {
+    height: 25vw;
+  }
+
+  .additional-project-item {
+    min-width: 22.537vw;
+    height: 22.537vw;
+  }
+
+  .additional-project-image {
+    padding: 1.25vw;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .page-section h2, .random-project-title i {
+    font-size: 11vw;
+  }
+
+  .page-subtitle {
+    font-size: 5.5vw;
+  }
+
+  .random-project-image img {
+    margin: 0 0 8% 0;
+    width: 100%;
+  }
+
+  .subtitle {
+    font-size: 7.2vw;
+  }
+
+  p, .thing-learned-item {
+    font-size: 5vw;
+  }
+
+  .random-project-text-video iframe {
+    width: 100%;
+    height: 55vw;
+  }
+
+  .things-learned-list {
+    padding-inline-start: 6vw;
+  }
+
+  .call-to-action-box {
+    margin-top: 23px;
+  }
+
 }

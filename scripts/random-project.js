@@ -14,8 +14,6 @@ function showProject(projectNumber) {
 function loadPage() {
   let projectName = window.location.hash;
 
-  console.log(projectName)
-
   switch (projectName) {
     case "#AFK_Apex_Bot":
       showProject(1);
@@ -38,14 +36,14 @@ function loadPage() {
     case "#Screen_Dimmer":
       showProject(7);
       break;
-    case "#William_Whitakers_Words_App":
-      showProject(8);
-      break;
+    // case "#William_Whitakers_Words_App":
+    //   showProject(8);
+    //   break;
     case "#This_Website":
       showProject(9);
       break;
     default:
-      showProject(Math.ceil(Math.random() * 9));
+      showProject(Math.ceil(Math.random() * 8));
   }
 }
 
