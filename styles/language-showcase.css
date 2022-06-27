@@ -200,6 +200,7 @@
 
   .language-box > h3 {
     font-size: 40px;
+    padding-top: 5%;
     margin: 0;
   }
 
@@ -225,7 +226,7 @@
   }
 
   .language-info-box {
-    padding: 9%;
+    padding: 4% 9% 9%;
     height: 96%;
   }
 
