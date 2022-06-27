@@ -205,7 +205,7 @@ function conwayMainLoop() {
   if (gameWidth > 2) {
     if (screen.width < 700) {
       gameWidth -= 2
-    } else if (screen.width < 1000) {
+    } else {
       gameWidth -= 1
     }
   }
@@ -224,7 +224,7 @@ function conwayMainLoop() {
       if (gameWidth > 2) {
         if (screen.width < 700) {
           gameWidth -= 2
-        } else if (screen.width < 1000) {
+        } else {
           gameWidth -= 1
         }
       }
