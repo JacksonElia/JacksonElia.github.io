@@ -4,6 +4,7 @@ const conwayDensitySlider = document.getElementById("conway-density-slider");
 const expandButton = document.getElementById("expand-button");
 const canvas = document.getElementById("conway-footer");
 const drawingContext = canvas.getContext('2d');
+const button2 = document.getElementsByClassName("button1")[0];
 
 const backgroundColor = "#202020";
 const cellColor = "#FF3854";
@@ -197,6 +198,7 @@ function expandConway() {
 
 // The main loop for Conway's game of life
 function conwayMainLoop() {
+  isElementInMiddleOfScreen(button2);
   // Does this in case the user changed the size of the window
   canvas.width = footer.clientWidth;
   canvas.height = footer.clientHeight;

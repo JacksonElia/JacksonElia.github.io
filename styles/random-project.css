@@ -172,7 +172,8 @@ ol li::marker {
   }
 
   .scroll-button {
-    min-width: 13vw;
+    max-width: 13vw;
+    width: 13vw;
     height: 25vw;
     font-size: 10vw;
     color: var(--mainColor);
@@ -234,6 +235,7 @@ ol li::marker {
 
   .additional-projects-row {
     overflow-x: auto;
+    width: 100%;
   }
 
 }
