@@ -231,7 +231,7 @@ function conwayMainLoop() {
         }
       }
       gameHeight = Math.ceil(canvas.height / cellSize);
-      if (expandingCount >= 50 * screen.height / 1000) {
+      if (expandingCount >= 55 * screen.height / 1000) {
         shrinking = false;
         expandingCount = 0;
         gameGrid = buildGameGrid();
