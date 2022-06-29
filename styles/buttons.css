@@ -38,3 +38,13 @@
   color: var(--mainColor);
   box-shadow: inset 9em 0 0 0 var(--themeColor);
 }
+
+.button1:focus {
+  background: radial-gradient(var(--themeColor), #ff2929);
+  outline: none;
+}
+
+.button1:focus .button1span {
+  color: var(--mainColor);
+  box-shadow: inset 9em 0 0 0 var(--themeColor);
+}

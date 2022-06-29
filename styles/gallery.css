@@ -40,11 +40,19 @@
   filter: none;
 }
 
+.cell:focus {
+  transform: scale(1.1);
+}
+
+.cell:focus .content img {
+  filter: none;
+}
+
 @media screen and (max-width: 1000px) {
   .inner-portfolio-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1vw;
+    gap: 5vw;
   }
 }
 
@@ -52,6 +60,6 @@
   .inner-portfolio-gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1vw;
+    gap: 7vw;
   }
 }

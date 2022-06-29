@@ -83,6 +83,16 @@
   color: var(--mainColor);
 }
 
+.language:focus {
+  background-color: var(--blendedColor);
+  border-radius: 1.9vw;
+  filter: brightness(130%);
+}
+
+.language:focus p {
+  color: var(--mainColor);
+}
+
 .chart {
   display: block;
   width: 100%;
