@@ -13,7 +13,7 @@ function selectLanguage(selectedLanguage) {
       console.log(selectedLanguage);
       language.style.cssText = `
         background-color: var(--blendedColor);
-        border-radius: 20px;
+        border-radius: 1.9vw;
       `;
       // Sets both the number and language name text color
       language.getElementsByTagName("p")[0].style.color = mainColor;
