@@ -52,6 +52,7 @@
 
 .language > p {
   font-size: 2vw;
+  line-height: 2.45vw;
 }
 
 .language {
@@ -61,7 +62,6 @@
   margin-left: 4%;
   margin-right: 4%;
   height: 3vw;
-  line-height: 2.45vw;
 }
 
 .language-num {
@@ -79,7 +79,7 @@
   filter: brightness(130%);
 }
 
-.language:hover p {
+.language:hover p span {
   color: var(--mainColor);
 }
 
@@ -89,7 +89,7 @@
   filter: brightness(130%);
 }
 
-.language:focus p {
+.language:focus p span {
   color: var(--mainColor);
 }
 
@@ -220,7 +220,7 @@
     padding: 5% 5% 0 5%;
   }
 
-  .language {
+  .language p {
     height: 40px;
     line-height: 35px;
   }
@@ -298,15 +298,11 @@
 
   .language {
     height: calc(4vw + 40%);
-    line-height: calc(2.8vw + 140%);
-    vertical-align: middle;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
 
   .language > p {
     font-size: calc(3vw + 65%);
+    line-height: calc(2.8vw + 140%);
   }
 
   .outer-language-info-box {

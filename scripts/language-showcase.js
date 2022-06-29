@@ -16,13 +16,13 @@ function selectLanguage(selectedLanguage) {
         border-radius: 100px;
       `;
       // Sets both the number and language name text color
-      language.getElementsByTagName("p")[0].style.color = mainColor;
-      language.getElementsByTagName("p")[1].style.color = mainColor;
+      language.getElementsByTagName("span")[0].style.color = mainColor;
+      language.getElementsByTagName("span")[1].style.color = mainColor;
       setLanguageInfo(language)
     } else {
       language.style.cssText = "";
-      language.getElementsByTagName("p")[0].style.cssText = "";
-      language.getElementsByTagName("p")[1].style.cssText = "";
+      language.getElementsByTagName("span")[0].style.cssText = "";
+      language.getElementsByTagName("span")[1].style.cssText = "";
     }
   }
 }
