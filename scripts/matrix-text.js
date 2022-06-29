@@ -38,8 +38,9 @@ function matrixTextTick() {
     let currentY = parseFloat(scroll.style.top);
     let scale = parseFloat(scroll.style.transform.replace("scale(", ""))
     scroll.style.top = `${currentY + speed}px`;
-    if (parseFloat(scroll.style.top) > speed * 100 + 700) {
+    if (scroll.getBoundingClientRect().top > screen.height) {
       scrollsToRemove.push(scroll);
+      console.log(currentY);
     }
   }
 
