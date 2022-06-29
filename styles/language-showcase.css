@@ -298,7 +298,11 @@
 
   .language {
     height: calc(4vw + 40%);
-    line-height: calc(30vw + 160%);
+    line-height: calc(2.8vw + 140%);
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .language > p {
