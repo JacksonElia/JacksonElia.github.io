@@ -24,7 +24,7 @@ html, body {
   margin: auto;
   font-family: var(--mainFont);
   background-color: var(--mainColor);
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 
 p {
