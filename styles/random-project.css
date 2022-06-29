@@ -186,6 +186,7 @@ ol li::marker {
     width: 13vw;
     height: 25vw;
     font-size: 10vw;
+    padding: 0;
     color: var(--mainColor);
     border: 2px solid black;
   }
