@@ -40,7 +40,7 @@ function loadPage() {
     //   showProject(8);
     //   break;
     case "#This_Website":
-      showProject(9);
+      showProject(8);
       break;
     default:
       showProject(Math.ceil(Math.random() * 8));

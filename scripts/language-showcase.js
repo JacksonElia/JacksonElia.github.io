@@ -175,7 +175,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://traptricker.github.io/random-project.html#William_Whitakers_Words_App">
+                <a href="https://github.com/Traptricker/WilliamWhitakersWordsSwiftApp">
                   <span>William Whitaker's App</span>
                 </a>
                 <p>Uses William Whitaker's to translate Latin words. It
