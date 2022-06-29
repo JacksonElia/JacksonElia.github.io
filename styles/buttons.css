@@ -13,13 +13,13 @@
   padding: 4px;
   position: relative;
   text-decoration: none;
-  min-width: 200px;
+  width: 80%;
 }
 
 .button1span {
   align-items: center;
   font-family: var(--secondaryFont);
-  font-size: 22px;
+  font-size: 140%;
   background-color: var(--mainColor);
   color: var(--themeColor);
   border-radius: 12px;
@@ -31,20 +31,20 @@
 }
 
 .button1:hover {
-  background: radial-gradient(var(--themeColor), #ff2929);
+  background: radial-gradient(var(--themeColor), var(--secondaryThemeColor));
 }
 
 .button1:hover .button1span {
   color: var(--mainColor);
-  box-shadow: inset 9em 0 0 0 var(--themeColor);
+  box-shadow: inset 10em 0 0 0 var(--blendedColor);
 }
 
 .button1:focus {
-  background: radial-gradient(var(--themeColor), #ff2929);
+  background: radial-gradient(var(--themeColor), var(--secondaryThemeColor));
   outline: none;
 }
 
 .button1:focus .button1span {
   color: var(--mainColor);
-  box-shadow: inset 9em 0 0 0 var(--themeColor);
+  box-shadow: inset 10em 0 0 0 var(--themeColor);
 }

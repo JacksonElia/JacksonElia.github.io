@@ -7,7 +7,7 @@
 /* Adds the tint to the image */
 .content > img {
   transition: .4s;
-  filter: sepia(100%) saturate(150%) brightness(60%) hue-rotate(-50deg);
+  filter: sepia(100%) saturate(150%) brightness(60%) hue-rotate(var(--filterColor));
 }
 
 .content > h3, p {

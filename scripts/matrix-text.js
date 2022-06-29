@@ -40,7 +40,6 @@ function matrixTextTick() {
     scroll.style.top = `${currentY + speed}px`;
     if (scroll.getBoundingClientRect().top > screen.height) {
       scrollsToRemove.push(scroll);
-      console.log(currentY);
     }
   }
 

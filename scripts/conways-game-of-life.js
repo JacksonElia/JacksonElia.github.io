@@ -6,7 +6,8 @@ const canvas = document.getElementById("conway-footer");
 const drawingContext = canvas.getContext('2d');
 
 const backgroundColor = "#202020";
-const cellColor = "#FF3854";
+let cellColor = getComputedStyle(document.documentElement).getPropertyValue("--blendedColor")
+
 let cellSize = 40;
 // Makes cell size smaller if the user is on a small device
 if (screen.width < 500) {
@@ -197,6 +198,7 @@ function expandConway() {
 
 // The main loop for Conway's game of life
 function conwayMainLoop() {
+  cellColor = getComputedStyle(document.documentElement).getPropertyValue("--blendedColor")
   // Does this in case the user changed the size of the window
   canvas.width = footer.clientWidth;
   canvas.height = footer.clientHeight;

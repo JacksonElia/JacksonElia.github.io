@@ -20,7 +20,6 @@ function focusCenterElement(element) {
   if (element_rect.y + element_rect.height / 2 >= window.innerHeight / 3 &&
       element_rect.y + element_rect.height / 2 <= 2 * window.innerHeight / 3) {
     element.focus();
-    console.log("focus");
   } else {
     element.blur();
   }
