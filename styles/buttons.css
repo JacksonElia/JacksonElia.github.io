@@ -19,7 +19,7 @@
 .button1span {
   align-items: center;
   font-family: var(--secondaryFont);
-  font-size: 140%;
+  font-size: 1.6vw;
   background-color: var(--mainColor);
   color: var(--themeColor);
   border-radius: 12px;
@@ -48,3 +48,16 @@
   color: var(--mainColor);
   box-shadow: inset 10em 0 0 0 var(--themeColor);
 }
+
+@media screen and (max-width: 1000px) {
+  .button1span {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .button1span {
+    font-size: 20px;
+  }
+}
+
