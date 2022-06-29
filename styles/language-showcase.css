@@ -298,7 +298,7 @@
 
   .language {
     height: calc(4vw + 40%);
-    line-height: calc(3.1vw + 140%);
+    line-height: calc(3.1vw + 160%);
   }
 
   .language > p {
