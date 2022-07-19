@@ -23,6 +23,7 @@ function loadPage() {
       break;
     case "#Casino_Crawl":
       showProject(3);
+      break;
     case "#COC_Auto_Bot":
       showProject(4);
       break;
