@@ -21,29 +21,31 @@ function loadPage() {
     case "#Bouncy":
       showProject(2);
       break;
-    case "#COC_Auto_Bot":
+    case "#Casino_Crawl":
       showProject(3);
-      break;
-    case "#DCS_Terminal":
+    case "#COC_Auto_Bot":
       showProject(4);
       break;
+    case "#DCS_Terminal":
+      showProject(5);
+      break;
     case "#Ethermine_Tracker":
-      showProject(5)
+      showProject(6)
       break;
     case "#Mazer":
-      showProject(6);
+      showProject(7);
       break;
     case "#Screen_Dimmer":
-      showProject(7);
+      showProject(8);
       break;
     // case "#William_Whitakers_Words_App":
     //   showProject(8);
     //   break;
     case "#This_Website":
-      showProject(8);
+      showProject(9);
       break;
     default:
-      showProject(Math.ceil(Math.random() * 8));
+      showProject(Math.ceil(Math.random() * 9));
   }
 }
 

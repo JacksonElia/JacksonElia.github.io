@@ -233,6 +233,22 @@ function setLanguageInfo(language) {
               </div>
             </div>
           </div>
+          <div class="project" id="project2">
+            <div class="project-inner">
+              <div class="project-top">
+                <a href="https://traptricker.github.io/random-project.html#Casino_Crawl">
+                  <span>Casino Crawl</span>
+                </a>
+                <p>A small dungeon crawler.</p>
+              </div>
+              <div class="project-bottom">
+                <p>Phaser</p>
+                <a href="https://github.com/yikuansun/CasinoCrawler" target="_blank">
+                  <i class="ion-social-github-outline"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       `;
       document.getElementById("confidence-bar").style.cssText = "width: 40%;";
