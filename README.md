@@ -10,8 +10,6 @@ This is the my personal, portfolio website. I made it to learn more about web de
 ## What I used
 
 ## Inspiration
-![image](https://user-images.githubusercontent.com/85963782/182089143-d622fb65-8b05-4fc5-94ae-df5641772922.png)
-
 
 ## Colors
 I picked the color pallete pretty much at random. What do you think my favorite color is?
@@ -20,4 +18,4 @@ I picked the color pallete pretty much at random. What do you think my favorite 
 
 | Color                           | Hex                                                                                               |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Main Background Color           | <img alt="website-logo" src="https://user-images.githubusercontent.com/85963782/182089143-d622fb65-8b05-4fc5-94ae-df5641772922.png" width="20">   `#121212`                                                                                                               |
+| Main Background Color           | <img alt="website-logo" src="https://user-images.githubusercontent.com/85963782/182089143-d622fb65-8b05-4fc5-94ae-df5641772922.png" width="30" height="12"> - **#121212**                                                                                                 |
