@@ -5,3 +5,19 @@ This is the my personal, portfolio website. I made it to learn more about web de
 
 \
 ![image](https://user-images.githubusercontent.com/85963782/182069448-48c69970-b027-4f87-abce-b655a338c407.png)
+
+
+## What I used
+
+## Inspiration
+![image](https://user-images.githubusercontent.com/85963782/182089143-d622fb65-8b05-4fc5-94ae-df5641772922.png)
+
+
+## Colors
+I picked the color pallete pretty much at random. What do you think my favorite color is?
+
+<img alt="website-logo" src="" width="20" height="20>
+
+| Color                           | Hex                                                                                               |
+| ------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Main Background Color           | <img alt="website-logo" src="https://user-images.githubusercontent.com/85963782/182089143-d622fb65-8b05-4fc5-94ae-df5641772922.png" width="20">   `#121212`                                                                                                               |
