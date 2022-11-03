@@ -228,8 +228,8 @@
     line-height: 35px;
   }
 
-  .language > p {
-    font-size: 20px;
+  .language p {
+    font-size: 23px;
   }
 
   .outer-language-info-box {
@@ -291,7 +291,7 @@
   }
 
   .knowledge-showcase {
-    height: calc(30vw + 200px + 400px);
+    height: calc(40vw + 200px + 400px);
     padding-bottom: 0;
   }
 
@@ -309,11 +309,11 @@
   }
 
   .language p {
-    font-size: calc(3vw + 65%);
+    font-size: 6vw;
   }
 
   .outer-language-info-box {
-    height: 380px;
+    height: 50%;
   }
 
   .language-box > h3 {
@@ -337,5 +337,11 @@
 
   .project-inner p {
     font-size: calc(1.5vw + 30%);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .language {
+    line-height: calc(2.8vw + 120%);
   }
 }
