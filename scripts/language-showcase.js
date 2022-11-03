@@ -55,14 +55,14 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://traptricker.github.io/random-project.html#Mazer">
+                <a href="https://jacksonelia.github.io/random-project.html#Mazer">
                   <span>Mazer</span>
                 </a>
                 <p>Make a maze and watch as it is solved!</p>
               </div>
               <div class="project-bottom">
                 <p>PyQt5</p>
-                <a href="https://github.com/Traptricker/Mazer" target="_blank">
+                <a href="https://github.com/jacksonelia/Mazer" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -71,14 +71,14 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://traptricker.github.io/random-project.html#DCS_Terminal">
+                <a href="https://jacksonelia.github.io/random-project.html#DCS_Terminal">
                   <span>DCS Terminal</span>
                 </a>
                 <p>Automatically solves any course on Datacamp!</p>
               </div>
               <div class="project-bottom">
                 <p>Selenium</p>
-                <a href="https://github.com/Traptricker/DCS_Terminal" target="_blank">
+                <a href="https://github.com/jacksonelia/DCS_Terminal" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -115,14 +115,14 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://traptricker.github.io/random-project.html#Bouncy">
+                <a href="https://jacksonelia.github.io/random-project.html#Bouncy">
                   <span>Bouncy</span>
                 </a>
                 <p>A simple game that quickly becomes chaos.</p>
               </div>
               <div class="project-bottom">
                 <p>Java AWT</p>
-                <a href="https://github.com/Traptricker/Bouncy" target="_blank">
+                <a href="https://github.com/jacksonelia/Bouncy" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -131,14 +131,14 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://traptricker.github.io/random-project.html#Ethermine_Tracker">
+                <a href="https://jacksonelia.github.io/random-project.html#Ethermine_Tracker">
                   <span>Ether Tracker</span>
                 </a>
                 <p>Tracks a miner address and stores data.</p>
               </div>
               <div class="project-bottom">
                 <p>JavaFX - Selenium</p>
-                <a href="https://github.com/Traptricker/EthermineTracker" target="_blank">
+                <a href="https://github.com/jacksonelia/EthermineTracker" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -175,7 +175,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://github.com/Traptricker/WilliamWhitakersWordsSwiftApp">
+                <a href="https://github.com/jacksonelia/WilliamWhitakersWordsSwiftApp">
                   <span>William Whitaker's App</span>
                 </a>
                 <p>Uses William Whitaker's to translate Latin words. It
@@ -183,7 +183,7 @@ function setLanguageInfo(language) {
               </div>
               <div class="project-bottom">
                 <p>Swift Soup</p>
-                <a href="https://github.com/Traptricker/WilliamWhitakersWordsSwiftApp" target="_blank">
+                <a href="https://github.com/jacksonelia/WilliamWhitakersWordsSwiftApp" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -219,7 +219,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://traptricker.github.io/random-project.html#This_Website">
+                <a href="https://jacksonelia.github.io/random-project.html#This_Website">
                   <span>My Website</span>
                 </a>
                 <p>This is the website you're on. This section was my first
@@ -227,7 +227,7 @@ function setLanguageInfo(language) {
               </div>
               <div class="project-bottom">
                 <p>No libraries used</p>
-                <a href="https://github.com/Traptricker/Traptricker.github.io" target="_blank">
+                <a href="https://github.com/jacksonelia/jacksonelia.github.io" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -236,7 +236,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://traptricker.github.io/random-project.html#Casino_Crawl">
+                <a href="https://jacksonelia.github.io/random-project.html#Casino_Crawl">
                   <span>Casino Crawl</span>
                 </a>
                 <p>A small dungeon crawler.</p>
