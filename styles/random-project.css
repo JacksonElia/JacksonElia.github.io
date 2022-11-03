@@ -72,10 +72,6 @@ iframe {
   align-items: center;
 }
 
-.additional-projects-row {
-  scroll-behavior: smooth;
-}
-
 .scroll-button {
   height: 200px;
   width: 100px;
@@ -97,6 +93,7 @@ iframe {
   align-items: center;
   gap: 10px;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .additional-project-item {

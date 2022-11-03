@@ -50,18 +50,21 @@
   width: 100%;
 }
 
-.language > p {
+.language .center {
+  padding: .07vw 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.language p {
   font-size: 2vw;
 }
 
 .language {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-left: 4%;
   margin-right: 4%;
   height: 3vw;
-  line-height: 2.45vw;
 }
 
 .language-num {
@@ -305,7 +308,7 @@
     box-sizing: border-box;
   }
 
-  .language > p {
+  .language p {
     font-size: calc(3vw + 65%);
   }
 
