@@ -175,15 +175,30 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://github.com/jacksonelia/WilliamWhitakersWordsSwiftApp">
+                <a href="https://jacksonelia.github.io/random-project.html#William_Whitakers_Words_App">
                   <span>William Whitaker's App</span>
                 </a>
-                <p>Uses William Whitaker's to translate Latin words. It
-                uses web-scrapping to get the translation.</p>
+                <p>A Latin to English translation app.</p>
               </div>
               <div class="project-bottom">
                 <p>Swift Soup</p>
                 <a href="https://github.com/jacksonelia/WilliamWhitakersWordsSwiftApp" target="_blank">
+                  <i class="ion-social-github-outline"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project" id="project2">
+            <div class="project-inner">
+              <div class="project-top">
+                <a href="https://jacksonelia.github.io/random-project.html#Block_Drop">
+                  <span>Block Drop</span>
+                </a>
+                <p>A tetris-inspired, block puzzle game. </p>
+              </div>
+              <div class="project-bottom">
+                <p>SwiftUI</p>
+                <a href="https://github.com/jacksonelia/Block-Drop" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -222,8 +237,7 @@ function setLanguageInfo(language) {
                 <a href="https://jacksonelia.github.io/random-project.html#This_Website">
                   <span>My Website</span>
                 </a>
-                <p>This is the website you're on. This section was my first
-                introduction to JavaScript!</p>
+                <p>This is the website you're on.</p>
               </div>
               <div class="project-bottom">
                 <p>No libraries used</p>
@@ -239,7 +253,7 @@ function setLanguageInfo(language) {
                 <a href="https://jacksonelia.github.io/random-project.html#Casino_Crawl">
                   <span>Casino Crawl</span>
                 </a>
-                <p>A small dungeon crawler.</p>
+                <p>A small, game jam dungeon crawler.</p>
               </div>
               <div class="project-bottom">
                 <p>Phaser</p>

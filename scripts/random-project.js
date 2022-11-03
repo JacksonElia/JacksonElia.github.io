@@ -39,11 +39,11 @@ function loadPage() {
     case "#Screen_Dimmer":
       showProject(8);
       break;
-    // case "#William_Whitakers_Words_App":
-    //   showProject(8);
-    //   break;
     case "#This_Website":
       showProject(9);
+      break;
+    case "#William_Whitakers_Words_App":
+      showProject(10);
       break;
     default:
       showProject(Math.ceil(Math.random() * 9));
