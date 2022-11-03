@@ -45,6 +45,9 @@ function loadPage() {
     case "#William_Whitakers_Words_App":
       showProject(10);
       break;
+    case "#Block_Drop":
+      showProject(11);
+      break;
     default:
       showProject(Math.ceil(Math.random() * 9));
   }
