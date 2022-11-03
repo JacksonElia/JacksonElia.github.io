@@ -309,7 +309,7 @@
   }
 
   .language p {
-    font-size: 6vw;
+    font-size: 6vw!important;
   }
 
   .outer-language-info-box {
@@ -342,6 +342,6 @@
 
 @media screen and (max-width: 300px) {
   .language {
-    line-height: calc(2.8vw + 120%);
+    line-height: calc(2.8vw + 120%)!important;
   }
 }

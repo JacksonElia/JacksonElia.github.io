@@ -164,8 +164,8 @@
 
   #main-nav-toggle:checked ~ #main-nav-list li {
     border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
+    height: 2.1em;
+    padding: 0.4em;
     transition: height .4s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
@@ -177,7 +177,7 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0.5em 0;
+    padding: 0.4em 0;
     width: 100%;
     color: var(--mainTextColor);
     background-color: var(--secondaryColor);
@@ -186,5 +186,13 @@
   #main-nav-list > li:not(:last-child) {
     border-bottom: 1px solid var(--tertiaryColor);
   }
+
+  .main-nav-item a {
+    transition: all 1s;
+    color: white;
+    position: relative;
+    font-size: .8em;
+  }
+
 
 }
