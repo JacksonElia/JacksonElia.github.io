@@ -12,6 +12,7 @@
   left: 50%!important;
   transform: translate(-50%, -50%)!important;
   margin: 0!important;
+  font-size: 8vw;
 }
 
 .matrix-scroll {
@@ -53,4 +54,12 @@
   width: 271px;
   background-color: var(--secondaryColor);
   z-index: 2;
+}
+
+@media (max-width: 820px) {
+
+  #matrix-text h1 {
+    font-size: 15vw;
+  }
+
 }
