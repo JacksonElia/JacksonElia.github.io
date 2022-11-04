@@ -18,6 +18,11 @@
 
 #logo img {
   width: 70px;
+  transition: 1s;
+}
+
+#logo img:hover {
+  filter: brightness(1.7);
 }
 
 #main-nav-list {
