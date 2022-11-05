@@ -29,7 +29,6 @@
   margin: 15% 5% 5%;
   background-color: transparent;
   display: grid;
-
   grid-template-columns: 1fr;
 }
 
@@ -51,14 +50,16 @@
 }
 
 .language .center {
-  padding: .07vw 0;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center; /* align vertical */
 }
 
 .language p {
   font-size: 2vw;
+  padding-bottom: 2px;
 }
 
 .language {
@@ -225,7 +226,6 @@
 
   .language {
     height: 40px;
-    line-height: 35px;
   }
 
   .language p {
@@ -301,7 +301,6 @@
 
   .language {
     height: calc(4vw + 40%);
-    line-height: calc(2.8vw + 140%);
     vertical-align: middle;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -337,11 +336,5 @@
 
   .project-inner p {
     font-size: calc(1.5vw + 30%);
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .language {
-    line-height: calc(2.8vw + 120%)!important;
   }
 }
