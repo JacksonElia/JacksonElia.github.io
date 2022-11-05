@@ -48,6 +48,9 @@ function loadPage() {
     case "#Block_Drop":
       showProject(11);
       break;
+    case "#NCT4AA_Website":
+      showProject(12);
+      break;
     default:
       showProject(Math.ceil(Math.random() * 9));
   }
