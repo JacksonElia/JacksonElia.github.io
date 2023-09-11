@@ -11,7 +11,7 @@
   --mainTextColor: white;
 
   --mainFont: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-  --secondaryFont: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  --secondaryFont: "JetBrains Mono",monospace;
 }
 
 * {

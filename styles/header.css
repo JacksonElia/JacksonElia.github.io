@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3% 8%;
+  padding: 2% 8%;
   position: absolute;
   width: 100%;
   z-index: 3;
@@ -12,7 +12,7 @@
 }
 
 #logo {
-  width: 70px;
+  width: 60px;
   z-index: 5;
 }
 
@@ -38,6 +38,8 @@
   color: white;
   position: relative;
   font-size: 2.1vw;
+  /*font-weight: 700;*/
+  font-family: var(--secondaryFont);
 }
 
 .main-nav-item a:hover {
