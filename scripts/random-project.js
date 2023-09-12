@@ -51,8 +51,11 @@ function loadPage() {
     case "#NCT4AA_Website":
       showProject(12);
       break;
+    case "#TigerLib":
+      showProject(13);
+      break;
     default:
-      showProject(Math.ceil(Math.random() * 9));
+      showProject(Math.ceil(Math.random() * 13));
   }
 }
 
