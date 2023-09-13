@@ -24,14 +24,14 @@ function matrixTextTick() {
    let height = Math.floor(Math.random() * 600) + 100;
     createScroll(
         Math.floor(Math.random() * matrixTextBox.offsetWidth),
-        -height - 100,
+        -height - 120,
         height,
         1 + Math.random() / 2.5,
         (Math.random() >= .9)
     );
   }
 
-  let speed = Math.round(matrixSpeedSlider.value / 4) + 2;
+  let speed = Math.round(matrixSpeedSlider.value / 2) + 1;
   let scrollsToRemove = [];
   for (let scroll of
       document.querySelectorAll(".matrix-scroll,.matrix-scroll-shiny")) {
