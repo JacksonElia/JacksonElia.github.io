@@ -54,8 +54,11 @@ function loadPage() {
     case "#TigerLib":
       showProject(13);
       break;
+    case "#TitaniumTigersWebsite":
+      showProject(14);
+      break;
     default:
-      showProject(Math.ceil(Math.random() * 13));
+      showProject(Math.ceil(Math.random() * 14));
   }
 }
 
