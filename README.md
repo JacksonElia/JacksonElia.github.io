@@ -1,7 +1,7 @@
 <img alt="website-logo" src="https://user-images.githubusercontent.com/85963782/182068506-cd46e74d-f90d-4904-b169-54445e3328f2.png" width="100">
 
 # [JacksonElia.github.io](https://jacksonelia.github.io/)
-This is the my personal, portfolio website. I made it to learn more about web development, and to have a cool and convenient place to show off my projects and knowledge. This website was made from scratch without a template. If you want to use this code for your own website/project, go ahead! **Just make sure you credit [me](https://github.com/JacksonElia) or my [website](https://jacksonelia.github.io/) somewhere.**
+This is my personal, portfolio website. I made it to learn more about web development, and to have a cool and convenient place to show off my projects and knowledge. This website was made from scratch without a template. If you want to use this code for your own website/project, go ahead! **Just make sure you credit [me](https://github.com/JacksonElia) or my [website](https://jacksonelia.github.io/) somewhere.**
 
 \
 ![image](https://user-images.githubusercontent.com/85963782/182211666-b3b58852-d226-4591-975a-78f9065a7a3e.png)
@@ -14,7 +14,7 @@ This is the my personal, portfolio website. I made it to learn more about web de
 - [W3Schools](https://www.w3schools.com/) some more solid documentation
 
 ## Inspiration
-I made this website because I wanted to learn more about web development, but I also had the thought: "Wouldn't it be cool if I programmed a portfolio to show off my programming?" This was my first time touching web dev, but I dove right in. I used no tutorial and just figured it out as I went, largely thanks to [MDN Web Docs](https://developer.mozilla.org/en-US/) and [W3Schools](https://www.w3schools.com/) amazing documentation and examples. Additionally I took inspiration from a few websites:
+I made this website because I wanted to learn more about web development, but I also had the thought: "Wouldn't it be cool if I programmed a portfolio to show off my programming?" This was my first time touching web dev, but I dove right in. I used no tutorial and just figured it out as I went, largely thanks to [MDN Web Docs](https://developer.mozilla.org/en-US/) and [W3Schools](https://www.w3schools.com/) amazing documentation and examples. Additionally, I took inspiration from a few websites:
 - https://brittanychiang.com/
 - https://jacekjeznach.com/
 
