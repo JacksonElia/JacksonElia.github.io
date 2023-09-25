@@ -16,7 +16,7 @@ This is my personal, portfolio website. I made it to learn more about web develo
 ## Inspiration
 I made this website because I wanted to learn more about web development, but I also had the thought: "Wouldn't it be cool if I programmed a portfolio to show off my programming?" This was my first time touching web dev, but I dove right in. I used no tutorial and just figured it out as I went, largely thanks to [MDN Web Docs](https://developer.mozilla.org/en-US/) and [W3Schools](https://www.w3schools.com/) amazing documentation and examples. Additionally, I took inspiration from a few websites:
 - https://brittanychiang.com/
-- https://jacekjeznach.com/
+- [https://jacekjeznach.com/](https://web.archive.org/web/20230427011623/https://jacekjeznach.com/)
 
 ## Colors
 I picked the color palette pretty much at random. What do you think my favorite color is?
