@@ -4,7 +4,7 @@
 This is my personal, portfolio website. I made it to learn more about web development, and to have a cool and convenient place to show off my projects and knowledge. This website was made from scratch without a template. If you want to use this code for your own website/project, go ahead! **Just make sure you credit [me](https://github.com/JacksonElia) or my [website](https://jacksonelia.github.io/) somewhere.**
 
 \
-![image](https://user-images.githubusercontent.com/85963782/182211666-b3b58852-d226-4591-975a-78f9065a7a3e.png)
+![image](https://github.com/JacksonElia/JacksonElia.github.io/assets/85963782/50f16761-8e5e-4787-8608-a276a42d6ee1)
 
 
 ## What I used
