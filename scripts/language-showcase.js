@@ -146,8 +146,8 @@ function setLanguageInfo(language) {
           </div>
         </div>
       `;
-      document.getElementById("confidence-bar").style.cssText = "width: 80%;";
-      document.getElementById("enjoyment-bar").style.cssText = "width: 40%;";
+      document.getElementById("confidence-bar").style.cssText = "width: 100%;";
+      document.getElementById("enjoyment-bar").style.cssText = "width: 100%;";
       break;
 
     case "Swift":
@@ -227,7 +227,7 @@ function setLanguageInfo(language) {
           </div>
         </div>
         <p class="language-description">
-          JavaScript is the newest language I've learned with this website being
+          I learned Javascript with this website being
           my motivator. I like how clean, simple, and powerful it is.
         </p>
         <div class="example-projects">
@@ -265,7 +265,50 @@ function setLanguageInfo(language) {
           </div>
         </div>
       `;
-      document.getElementById("confidence-bar").style.cssText = "width: 40%;";
+      document.getElementById("confidence-bar").style.cssText = "width: 70%;";
+      document.getElementById("enjoyment-bar").style.cssText = "width: 60%;";
+      break;
+
+    case "C":
+      languageInfoBox.innerHTML = `
+        <div class="progress-bars">
+          <div class="chart">
+            <span>Confidence:</span>
+            <footer>
+              <div class="progress-bar" id="confidence-bar"></div>
+            </footer>
+          </div>
+          <div class="chart">
+            <span>Enjoyment:</span>
+            <footer>
+              <div class="progress-bar" id="enjoyment-bar"></div>
+            </footer>
+          </div>
+        </div>
+        <p class="language-description">
+          C is the newest language I've learned. I enjoy how its
+          complexity can result in very fast speeds.
+        </p>
+        <div class="example-projects">
+          <div class="project" id="project1">
+            <div class="project-inner">
+              <div class="project-top">
+                <a href="https://jacksonelia.github.io/random-project.html#This_Website">
+                  <span>My Website</span>
+                </a>
+                <p>This is the website you're on.</p>
+              </div>
+              <div class="project-bottom">
+                <p>No libraries used</p>
+                <a href="https://github.com/jacksonelia/jacksonelia.github.io" target="_blank">
+                  <i class="ion-social-github-outline"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      document.getElementById("confidence-bar").style.cssText = "width: 50%;";
       document.getElementById("enjoyment-bar").style.cssText = "width: 90%;";
       break;
   }
