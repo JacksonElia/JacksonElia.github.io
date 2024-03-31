@@ -293,14 +293,14 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#This_Website">
-                  <span>My Website</span>
+                <a href="https://github.com/JacksonElia/C_Games">
+                  <span>C Games</span>
                 </a>
-                <p>This is the website you're on.</p>
+                <p>A collection of visual oddities made with C.</p>
               </div>
               <div class="project-bottom">
                 <p>No libraries used</p>
-                <a href="https://github.com/jacksonelia/jacksonelia.github.io" target="_blank">
+                <a href="https://github.com/JacksonElia/C_Games" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
