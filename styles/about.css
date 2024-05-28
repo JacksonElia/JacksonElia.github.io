@@ -39,6 +39,10 @@ hr {
   margin-top: 35px;
 }
 
+.about-url {
+  color: var(--themeColor);
+}
+
 #about-img-1 {
   max-width: 300px;
   display: block;
