@@ -25,13 +25,18 @@ hr {
   color: var(--themeColor);
 }
 
+#about-second-block-first-text {
+  margin-top: 0;
+}
+
 .image-infotext {
   align-items: center;
+  margin-top: 10%;
 }
 
 .image-infotext p {
   text-align: center;
-  margin-bottom: -15px;
+  margin-top: 2%;
   color: var(--tertiaryColor);
 }
 
@@ -60,9 +65,15 @@ hr {
 }
 
 #about-img-3 {
-  max-width: 500px;
+  width: 300px;
   display: block;
-  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-img-4 {
+  max-width: 300px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -91,10 +102,6 @@ hr {
 
   .about-picture {
     height: 80vw;
-  }
-
-  .image-infotext {
-    height: 90vw;
   }
 
   #about-img-1 {
