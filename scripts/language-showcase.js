@@ -176,7 +176,7 @@ function setLanguageInfo(language) {
             <div class="project-inner">
               <div class="project-top">
                 <a href="https://jacksonelia.github.io/random-project.html#William_Whitakers_Words_App">
-                  <span>William Whitaker's App</span>
+                  <span>William Whitaker's</span>
                 </a>
                 <p>A Latin to English translation app.</p>
               </div>
@@ -210,7 +210,7 @@ function setLanguageInfo(language) {
       document.getElementById("enjoyment-bar").style.cssText = "width: 70%;";
       break;
 
-    case "JavaScript":
+    case "JS/TS":
       languageInfoBox.innerHTML = `
         <div class="progress-bars">
           <div class="chart">
@@ -227,21 +227,22 @@ function setLanguageInfo(language) {
           </div>
         </div>
         <p class="language-description">
-          I learned Javascript with this website being
-          my motivator. I like how clean, simple, and powerful it is.
+          I first learned JavaScript with this website being
+          my motivator. Then I learned TypeScript during my internship at Ndustrial and refined 
+          my knowledge of it with personal projects.
         </p>
         <div class="example-projects">
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#This_Website">
-                  <span>My Website</span>
+                <a href="https://github.com/yikuansun/drss">
+                  <span>DRSS</span>
                 </a>
-                <p>This is the website you're on.</p>
+                <p>A library creating dynamic style sheets via JS.</p>
               </div>
               <div class="project-bottom">
                 <p>No libraries used</p>
-                <a href="https://github.com/jacksonelia/jacksonelia.github.io" target="_blank">
+                <a href="https://github.com/yikuansun/drss" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
