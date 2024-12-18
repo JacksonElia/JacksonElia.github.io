@@ -266,10 +266,10 @@ function setLanguageInfo(language) {
         </div>
       `;
       document.getElementById("confidence-bar").style.cssText = "width: 70%;";
-      document.getElementById("enjoyment-bar").style.cssText = "width: 60%;";
+      document.getElementById("enjoyment-bar").style.cssText = "width: 80%;";
       break;
 
-    case "C":
+    case "C/C++":
       languageInfoBox.innerHTML = `
         <div class="progress-bars">
           <div class="chart">
@@ -293,6 +293,22 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
+                <a href="https://github.ncsu.edu/Wolf-Pack-Robotics/Programming-High-Stakes">
+                  <span>Vex Robotics</span>
+                </a>
+                <p>I'm a programmer on NCSU's Vex Robotics Team.</p>
+              </div>
+              <div class="project-bottom">
+                <p>Vex Pros</p>
+                <a href="https://github.ncsu.edu/Wolf-Pack-Robotics/Programming-High-Stakes" target="_blank">
+                  <i class="ion-social-github-outline"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project" id="project1">
+            <div class="project-inner">
+              <div class="project-top">
                 <a href="https://github.com/JacksonElia/C_Games">
                   <span>C Games</span>
                 </a>
@@ -308,7 +324,7 @@ function setLanguageInfo(language) {
           </div>
         </div>
       `;
-      document.getElementById("confidence-bar").style.cssText = "width: 50%;";
+      document.getElementById("confidence-bar").style.cssText = "width: 70%;";
       document.getElementById("enjoyment-bar").style.cssText = "width: 90%;";
       break;
   }
