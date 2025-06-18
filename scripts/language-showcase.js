@@ -270,7 +270,7 @@ function setLanguageInfo(language) {
       document.getElementById("enjoyment-bar").style.cssText = "width: 80%;";
       break;
 
-    case "C/C++":
+    case "C/C++/C#":
       languageInfoBox.innerHTML = `
         <div class="progress-bars">
           <div class="chart">
@@ -287,21 +287,22 @@ function setLanguageInfo(language) {
           </div>
         </div>
         <p class="language-description">
-          C is the newest language I've learned. I enjoy how its
-          complexity can result in very fast speeds.
+          I recently learned C and C++ from various projects in clubs and
+          my lab, and I already had a good grip on C# because of my Java experience,
+          but my internship has helped me become truly comfortable with it.
         </p>
         <div class="example-projects">
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://github.ncsu.edu/Wolf-Pack-Robotics/Programming-High-Stakes">
-                  <span>Vex Robotics</span>
+                <a href="https://collieraerospace.com/">
+                  <span>HyperX/Solver</span>
                 </a>
-                <p>I'm a programmer on NCSU's Vex Robotics Team.</p>
+                <p>My programming at Collier Aerospace has mainly used C#.</p>
               </div>
               <div class="project-bottom">
-                <p>Vex Pros</p>
-                <a href="https://github.ncsu.edu/Wolf-Pack-Robotics/Programming-High-Stakes" target="_blank">
+                <p>C#</p>
+                <a href="https://collieraerospace.com/" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -313,6 +314,7 @@ function setLanguageInfo(language) {
                 <a href="https://github.com/JacksonElia/C_Games">
                   <span>C Games</span>
                 </a>
+<!--                TODO: add project FIRM here -->
                 <p>A collection of visual oddities made with C.</p>
               </div>
               <div class="project-bottom">
