@@ -1,11 +1,11 @@
-.about-first-block, .text-image {
+.about-first-block-text-image, .text-image {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 30px;
   align-items: center;
 }
 
-.about-first-block p {
+.about-first-block-text-image p {
   font-size: 40px;
 }
 
@@ -49,7 +49,7 @@ hr {
 }
 
 #about-img-1 {
-  max-width: 300px;
+  max-width: 500px;
   display: block;
   margin-top: 5px;
   margin-left: auto;
@@ -80,7 +80,7 @@ hr {
 
 @media screen and (max-width: 1200px) {
 
-  .about-first-block p, .about-first-block li {
+  .about-first-block-text-image p, .about-first-block-text-image li {
     font-size: 3.5vw;
   }
 
@@ -92,7 +92,7 @@ hr {
 
 @media screen and (max-width: 1000px) {
 
-  .about-first-block {
+  .about-first-block-text-image {
     display: block;
   }
 
@@ -101,13 +101,13 @@ hr {
   }
 
   .about-picture {
-    height: 80vw;
+    /*height: 80vw;*/
   }
 
   #about-img-1 {
     max-width: 70%;
     padding-top: 5%;
-    height: 96%;
+    /*height: 96%;*/
   }
 
   #about-img-3 {
@@ -116,7 +116,7 @@ hr {
     height: 90%;
   }
 
-  .about-first-block p, .about-first-block li {
+  .about-first-block-text-image p, .about-first-block-text-image li {
     font-size: 35px;
   }
 
@@ -142,7 +142,7 @@ hr {
     font-size: 16vw;
   }
 
-  .about-first-block p, .about-first-block li {
+  .about-first-block-text-image p, .about-first-block li {
     font-size: 7vw;
   }
 
