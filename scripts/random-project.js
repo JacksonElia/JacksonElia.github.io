@@ -51,7 +51,7 @@ function loadPage() {
     case "#NCT4AA_Website":
       showProject(12);
       break;
-    case "#TigerLib":
+    case "#TigerHelpers":
       showProject(13);
       break;
     case "#TitaniumTigersWebsite":

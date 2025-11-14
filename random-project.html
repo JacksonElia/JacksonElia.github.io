@@ -448,8 +448,8 @@
           to attack while reading how much loot each base has. When it finds a base with higher
           loot than normal, it attacks it. Finally, it repeats this whole process.
         </p>
-<!--        <iframe src="https://www.youtube.com/embed/oEafdI-6Ch4"></iframe>-->
-<!--        They took down my video :( -->
+        <!--        <iframe src="https://www.youtube.com/embed/oEafdI-6Ch4"></iframe>-->
+        <!--        They took down my video :( -->
       </div>
     </div>
 
@@ -1154,15 +1154,15 @@
     </div>
   </div>
 
-  <!-- TigerLib -->
+  <!-- TigerHelpers -->
   <div class="random-project-div">
     <div class="random-project-title">
-      <h2 class="page-title">TigerLib</h2>
-      <a href="https://github.com/JacksonElia/TigerLib" target="_blank">
+      <h2 class="page-title">TigerHelpers</h2>
+      <a href="https://github.com/TitaniumTigers4829/TigerHelpers" target="_blank">
         <i class="ion-social-github-outline"></i>
       </a>
     </div>
-    <h3 class="page-subtitle">Code I've developed for FRC programming.</h3>
+    <h3 class="page-subtitle">A library for computer vision in FRC.</h3>
 
     <div class="random-project-image">
       <img src="images/TigerLib.png" alt="place-holder" loading="lazy">
@@ -1172,8 +1172,12 @@
 
     <div class="random-project-first-block">
       <p>
-        During my time on my robotics team, I wrote a lot of code. This project contains
-        most of the interesting stuff.
+        Many FRC robotics teams use Limelight cameras to detect April Tags and do pose estimation. This library allows
+        you to easily get that data and use it in your robot code.
+
+        TigerHelpers is a refined version of LimelightHelpers, aimed at being cleaner, better documented, and more
+        focused on AprilTag detection. It will be kept up to date with any new Limelight features and includes
+        additional helper methods aimed at making various things, such as unit testing, easier.
       </p>
     </div>
 
@@ -1181,9 +1185,9 @@
       <h3 class="subtitle">Why I made it</h3>
 
       <p>
-        This code took me A LOT of time to make, so I wanted to make the journey easier
-        for other programmers. I wanted to make a modular and easy to use version of the
-        code my team used.
+        The current version of LimelightHelpers has several issues and is lacking some functionality. I wanted to
+        create a library that was easier to use, better documented, and included more features that FRC teams including
+        my own would find useful.
       </p>
     </div>
 
@@ -1200,15 +1204,15 @@
               </p>
             </li>
             <li class="thing-learned-item">
-              Real Time Trajectories
+              JitPack
               <p>
-                Using my own version of a PathPlanner command, the robot can create and follow paths in real time
+                In order to make this library available to other teams, I used JitPack to host it
               </p>
             </li>
             <li class="thing-learned-item">
-              Lookup Tables
+              Documentation
               <p>
-                With look up tables you can easily approximate one or multiple values based on one input
+                This library is well documented and includes examples of how to use it
               </p>
             </li>
           </ol>
@@ -1221,10 +1225,10 @@
       <h3 class="subtitle">Learn More</h3>
 
       <div class="call-to-action-box">
-        <p>Further information, background, and a download for this project are available at my
+        <p>Further information, background, and a download for this project are available at my robotic team's
           Github.</p>
-        <a class="button1" href="https://github.com/JacksonElia/TigerLib"><span
-                class="button1span">Check it Out!</span></a>
+        <a class="button1" href="https://github.com/TitaniumTigers4829/TigerHelpers"><span
+            class="button1span">Check it Out!</span></a>
       </div>
     </div>
   </div>
@@ -1297,7 +1301,7 @@
       <div class="call-to-action-box">
         <p>Go take a look at the website!</p>
         <a class="button1" href="https://titaniumtigers4829.com/"><span
-                class="button1span">Check it Out!</span></a>
+            class="button1span">Check it Out!</span></a>
       </div>
     </div>
   </div>
@@ -1334,7 +1338,8 @@
       <p>
         My team had been working on air brakes for around 4 years, and we had never gotten them to work.
         At the beginning of the 2024 school year, I was tasked with taking over the project. This is one of
-        the best pieces of code I have ever been a part of writing, and I'm very proud of it as it has worked extremely well.
+        the best pieces of code I have ever been a part of writing, and I'm very proud of it as it has worked extremely
+        well.
       </p>
     </div>
 
@@ -1375,7 +1380,7 @@
       <div class="call-to-action-box">
         <p>Go take a check the code out!</p>
         <a class="button1" href="https://github.com/NCSU-High-Powered-Rocketry-Club/AirbrakesV2"><span
-                class="button1span">Check it Out!</span></a>
+            class="button1span">Check it Out!</span></a>
       </div>
     </div>
   </div>
@@ -1462,14 +1467,14 @@
             </a>
           </div>
         </div>
-        <div class="additional-project-item">
-          <div class="additional-project-image">
-            <a href="random-project.html#TigerLib" onclick="scrollUp()">
-              <img class="project-icon-image" alt="Tiger Lib Logo"
-                   src="images/tigerliblogo.jpg">
-            </a>
-          </div>
-        </div>
+        <!--        <div class="additional-project-item">-->
+        <!--          <div class="additional-project-image">-->
+        <!--            <a href="random-project.html#TigerHelpers" onclick="scrollUp()">-->
+        <!--              <img class="project-icon-image" alt="4829 Logo"-->
+        <!--                   src="images/4829LogoTransparent.png">-->
+        <!--            </a>-->
+        <!--          </div>-->
+        <!--        </div>-->
         <div class="additional-project-item">
           <div class="additional-project-image">
             <a href="random-project.html#Mazer" onclick="scrollUp()">
@@ -1549,44 +1554,44 @@
 <!--  Runs the script when the page loads  -->
 <script src="scripts/random-project.js" defer></script>
 <script>
-  function scrollUp() {
-    window.scrollBy(0, -10000);
-  }
-
-  let additionalProjectsRow = document.getElementsByClassName("additional-projects-row")[0] // Theres only one
-  function scrollL() {
-    if (screen.width > 700) {
-      additionalProjectsRow.scrollBy(-450, 0)
-    } else if (screen.width > 450) {
-      additionalProjectsRow.scrollBy(-300, 0)
-    } else if (screen.width > 300) {
-      additionalProjectsRow.scrollBy(-200, 0)
-    } else {
-      additionalProjectsRow.scrollBy(-100, 0)
+    function scrollUp() {
+        window.scrollBy(0, -10000);
     }
-  }
 
-  function scrollR() {
-    if (screen.width > 700) {
-      additionalProjectsRow.scrollBy(450, 0)
-    } else if (screen.width > 450) {
-      additionalProjectsRow.scrollBy(300, 0)
-    } else if (screen.width > 300) {
-      additionalProjectsRow.scrollBy(200, 0)
-    } else {
-      additionalProjectsRow.scrollBy(100, 0)
+    let additionalProjectsRow = document.getElementsByClassName("additional-projects-row")[0] // Theres only one
+    function scrollL() {
+        if (screen.width > 700) {
+            additionalProjectsRow.scrollBy(-450, 0)
+        } else if (screen.width > 450) {
+            additionalProjectsRow.scrollBy(-300, 0)
+        } else if (screen.width > 300) {
+            additionalProjectsRow.scrollBy(-200, 0)
+        } else {
+            additionalProjectsRow.scrollBy(-100, 0)
+        }
     }
-  }
+
+    function scrollR() {
+        if (screen.width > 700) {
+            additionalProjectsRow.scrollBy(450, 0)
+        } else if (screen.width > 450) {
+            additionalProjectsRow.scrollBy(300, 0)
+        } else if (screen.width > 300) {
+            additionalProjectsRow.scrollBy(200, 0)
+        } else {
+            additionalProjectsRow.scrollBy(100, 0)
+        }
+    }
 </script>
 <script>
-  <!--  Updates the page if the hash changes  -->
-  window.addEventListener("hashchange", () => {
-    loadPage()
-  })
+    <!--  Updates the page if the hash changes  -->
+    window.addEventListener("hashchange", () => {
+        loadPage()
+    })
 </script>
 <script src="scripts/conways-game-of-life.js"></script>
 <script src="scripts/mobile-intersect-hover.js">
-  galleryPresent = false;
+    galleryPresent = false;
 </script>
 <script src="scripts/change-theme-color.js" defer></script>
 

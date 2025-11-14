@@ -88,7 +88,7 @@ function setLanguageInfo(language) {
       `;
       // Sets the length of the bars
       document.getElementById("confidence-bar").style.cssText = "width: 100%;";
-      document.getElementById("enjoyment-bar").style.cssText = "width: 100%;";
+      document.getElementById("enjoyment-bar").style.cssText = "width: 80%;";
       break;
 
     case "Java":
@@ -235,14 +235,14 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://github.com/yikuansun/drss">
-                  <span>DRSS</span>
+                <a href="https://firm.ncsurocketry.org/">
+                  <span>FIRM Web App</span>
                 </a>
-                <p>A library creating dynamic style sheets via JS.</p>
+                <p>A React-based web app for interacting with FIRM.</p>
               </div>
               <div class="project-bottom">
-                <p>No libraries used</p>
-                <a href="https://github.com/yikuansun/drss" target="_blank">
+                <p>React - Tailwind</p>
+                <a href="https://github.com/NCSU-High-Powered-Rocketry-Club/FIRM-Web-App" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
