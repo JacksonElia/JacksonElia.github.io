@@ -1,311 +1,414 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-  <link rel="icon" href="images/Logo.png">
+    <head>
+        <link rel="icon" href="images/Logo.png" />
 
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Jackson Elia</title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel="stylesheet" type="text/css" href="styles/header.css">
-  <link rel="stylesheet" type="text/css" href="styles/buttons.css">
-  <link rel="stylesheet" type="text/css" href="styles/matrix-text.css">
-  <link rel="stylesheet" type="text/css" href="styles/gallery.css">
-  <link rel="stylesheet" type="text/css" href="styles/language-showcase.css">
-  <link rel="stylesheet" type="text/css" href="styles/footer.css">
-  <link rel="stylesheet" type="text/css" href="styles/sliders.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-</head>
-<body>
-
-<header>
-  <div id="header-container">
-    <a href="index.html" id="logo"><img src="images/Logo.png" alt="Logo made by Sydney"></a>
-    <input id="main-nav-toggle" type="checkbox"/>
-    <label class="main-nav-button-container" for="main-nav-toggle">
-      <div class="main-nav-button" id="top-nav-button"></div>
-      <div class="main-nav-button" id="mid-nav-button"></div>
-      <div class="main-nav-button" id="bot-nav-button"></div>
-    </label>
-    <ul id="main-nav-list">
-      <li class="main-nav-item"><a href="index.html">Home</a></li>
-      <li class="main-nav-item"><a href="about.html">About</a></li>
-      <li class="main-nav-item"><a href="random-project.html">Random Project</a></li>
-    </ul>
-    <div id="header-background"></div>
-  </div>
-</header>
-
-<section class="greeting-section">
-
-  <div id="matrix-text">
-
-    <div class="main-container">
-      <h1>Hi, I'm Jack.</h1>
-    </div>
-
-    <div class="matrix-header-menu">
-      <input type="range" id="matrix-speed-slider" value="20">
-      <input type="range" id="matrix-density-slider" value="50">
-      <div id="typed-out-box">
-        <div id="typed-out-text">Play with these -></div>
-      </div>
-      <div id="matrix-header-menu-background"></div>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="portfolio-section">
-  <div class="portfolio-container">
-
-    <h2>My Portfolio</h2>
-
-    <div class="portfolio-div">
-      <p>These are some of my favorite projects. Each of them took a lot of effort to make and took a lot
-        of bug squishing. With each one of them, I tried to learn something new!</p>
-      <a class="button1" href="https://github.com/jacksonelia" target="_blank"><span
-          class="button1span">See My Github</span></a>
-    </div>
-
-    <hr>
-
-    <!--the height to width ratio for these pictures should be about .8-->
-    <div class="portfolio-gallery">
-      <div class="inner-portfolio-gallery">
-        <div class="cell" tabindex="-1">
-          <a href="random-project.html#TitaniumTigersWebsite">
-            <div class="content">
-              <img src="images/titaniumtigerswebsite.png" alt="Titanium Tigers Website" style="width:100%">
-              <h3>4829 Website</h3>
-              <p>The website I made for my robotics team.</p>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Jackson Elia</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="styles/header.css" />
+        <link rel="stylesheet" type="text/css" href="styles/buttons.css" />
+        <link rel="stylesheet" type="text/css" href="styles/matrix-text.css" />
+        <link rel="stylesheet" type="text/css" href="styles/gallery.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="styles/language-showcase.css"
+        />
+        <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+        <link rel="stylesheet" type="text/css" href="styles/sliders.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div id="header-container">
+                <a href="index.html" id="logo"
+                    ><img src="images/Logo.png" alt="Logo made by Sydney"
+                /></a>
+                <input id="main-nav-toggle" type="checkbox" />
+                <label class="main-nav-button-container" for="main-nav-toggle">
+                    <div class="main-nav-button" id="top-nav-button"></div>
+                    <div class="main-nav-button" id="mid-nav-button"></div>
+                    <div class="main-nav-button" id="bot-nav-button"></div>
+                </label>
+                <ul id="main-nav-list">
+                    <li class="main-nav-item"><a href="index.html">Home</a></li>
+                    <li class="main-nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="random-project.html">Random Project</a>
+                    </li>
+                </ul>
+                <div id="header-background"></div>
             </div>
-          </a>
-        </div>
-        <div class="cell" tabindex="-1">
-          <a href="random-project.html#Block_Drop">
-            <div class="content">
-              <img src="images/block%20drop%20image.png" alt="Block Drop" style="width:100%">
-              <h3>Block Drop</h3>
-              <p>A block-puzzle mobile game</p>
-            </div>
-          </a>
-        </div>
-        <div class="cell" tabindex="-1">
-          <a href="random-project.html#Bouncy">
-            <div class="content">
-              <img src="images/Bouncy%20Image.png" alt="Bouncy" style="width:100%">
-              <h3>Bouncy</h3>
-              <p>A chaotic bullet-hell game</p>
-            </div>
-          </a>
-        </div>
-        <div class="cell" tabindex="-1">
-          <a href="random-project.html#Ethermine_Tracker">
-            <div class="content">
-              <img src="images/Ethermine%20Tracker.png" alt="Ethermine Tracker" style="width:100%">
-              <h3>Ethermine Tracker</h3>
-              <p>Tracks Ethereum mining data</p>
-            </div>
-          </a>
-        </div>
-        <div class="cell" tabindex="-1">
-          <a href="random-project.html#AirbrakesV2">
-            <div class="content">
-              <img src="images/RocketryLogoCropped.png" alt="Tacho Lycos" style="width:100%">
-              <h3>AirbrakesV2</h3>
-              <p>The code for my team's Airbrakes rocket</p>
-            </div>
-          </a>
-        </div>
-        <div class="cell" tabindex="-1">
-          <a href="random-project.html#TigerHelpers">
-            <div class="content">
-              <img src="images/4829LogoTransparent.png" alt="TigerHelpers" style="width:100%">
-              <h3>TigerHelpers</h3>
-              <p>A library for computer vision in FRC</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+        </header>
 
-  </div>
-</section>
-
-<section class="knowledge-section" id="knowledge_section_id">
-  <div class="knowledge-container">
-
-    <h2>My Knowledge & Experience</h2>
-
-    <div class="knowledge-div">
-      <p>
-        I love computer science and programming because of how much there is to learn. Since I
-        first learned how to program with Swift, I've been learning new things and have been trying
-        to expand my knowledge. In fact, I made this website to learn more about web
-        development!
-      </p>
-    </div>
-
-    <hr>
-
-    <div class="knowledge-showcase">
-      <div class="language-box">
-        <h3>Languages:</h3>
-        <div class="languages">
-          <div class="language" onclick="selectLanguage(this)">
-            <div class="center">
-              <p class="language-num">0</p>
-              <p class="language-content">Python</p>
-            </div>
-          </div>
-          <div class="language" onclick="selectLanguage(this)">
-            <div class="center">
-              <p class="language-num">1</p>
-              <p class="language-content">Java</p>
-            </div>
-          </div>
-          <div class="language" onclick="selectLanguage(this)">
-            <div class="center">
-              <p class="language-num">2</p>
-              <p class="language-content">Swift</p>
-            </div>
-          </div>
-          <div class="language" onclick="selectLanguage(this)">
-            <div class="center">
-              <p class="language-num">3</p>
-              <p class="language-content">JS/TS</p>
-            </div>
-          </div>
-          <div class="language" onclick="selectLanguage(this)">
-            <div class="center">
-              <p class="language-num">4</p>
-              <p class="language-content">C/C++/C#</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="outer-language-info-box">
-
-        <div class="language-info-box">
-
-          <div class="progress-bars">
-            <div class="chart">
-              <span>Confidence:</span>
-              <footer>
-                <div class="progress-bar" id="confidence-bar"></div>
-              </footer>
-            </div>
-            <div class="chart">
-              <span>Enjoyment:</span>
-              <footer>
-                <div class="progress-bar" id="enjoyment-bar"></div>
-              </footer>
-            </div>
-          </div>
-
-          <p class="language-description">
-            Python was the second language I learned. It's the one I'm most comfortable with, and
-            I've used it to make a variety of things.
-          </p>
-
-          <div class="example-projects">
-            <div class="project" id="project1">
-              <div class="project-inner">
-                <div class="project-top">
-                  <a href="random-project.html#Mazer">
-                    <span>Mazer</span>
-                  </a>
-                  <p>Make a maze and watch as it is solved!</p>
+        <section class="greeting-section">
+            <div id="matrix-text">
+                <div class="main-container">
+                    <h1>Hi, I'm Jack.</h1>
                 </div>
-                <div class="project-bottom">
-                  <p>PyQt5</p>
-                  <a href="https://github.com/jacksonelia/Mazer" target="_blank">
-                    <i class="ion-social-github-outline"></i>
-                  </a>
+
+                <div class="matrix-header-menu">
+                    <input type="range" id="matrix-speed-slider" value="20" />
+                    <input type="range" id="matrix-density-slider" value="50" />
+                    <div id="typed-out-box">
+                        <div id="typed-out-text">Play with these -></div>
+                    </div>
+                    <div id="matrix-header-menu-background"></div>
                 </div>
-              </div>
             </div>
-            <div class="project" id="project2">
-              <div class="project-inner">
-                <div class="project-top">
-                  <a href="random-project.html#DCS_Terminal">
-                    <span>DCS Terminal</span>
-                  </a>
-                  <p>Automatically solves any course on Datacamp!</p>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="portfolio-container">
+                <h2>My Portfolio</h2>
+
+                <div class="portfolio-div">
+                    <p>
+                        These are some of my favorite projects. Each of them
+                        took a lot of effort to make and took a lot of bug
+                        squishing. With each one of them, I tried to learn
+                        something new!
+                    </p>
+                    <a
+                        class="button1"
+                        href="https://github.com/jacksonelia"
+                        target="_blank"
+                        ><span class="button1span">See My Github</span></a
+                    >
                 </div>
-                <div class="project-bottom">
-                  <p>Selenium</p>
-                  <a href="https://github.com/jacksonelia/DCS_Terminal" target="_blank">
-                    <i class="ion-social-github-outline"></i>
-                  </a>
+
+                <hr />
+
+                <!--the height to width ratio for these pictures should be about .8-->
+                <div class="portfolio-gallery">
+                    <div class="inner-portfolio-gallery">
+                        <div class="cell" tabindex="-1">
+                            <a href="random-project.html#TitaniumTigersWebsite">
+                                <div class="content">
+                                    <img
+                                        src="images/titaniumtigerswebsite.png"
+                                        alt="Titanium Tigers Website"
+                                        style="width: 100%"
+                                    />
+                                    <h3>4829 Website</h3>
+                                    <p>
+                                        The website I made for my robotics team.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cell" tabindex="-1">
+                            <a href="random-project.html#Block_Drop">
+                                <div class="content">
+                                    <img
+                                        src="images/block%20drop%20image.png"
+                                        alt="Block Drop"
+                                        style="width: 100%"
+                                    />
+                                    <h3>Block Drop</h3>
+                                    <p>A block-puzzle mobile game</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cell" tabindex="-1">
+                            <a href="random-project.html#Bouncy">
+                                <div class="content">
+                                    <img
+                                        src="images/Bouncy%20Image.png"
+                                        alt="Bouncy"
+                                        style="width: 100%"
+                                    />
+                                    <h3>Bouncy</h3>
+                                    <p>A chaotic bullet-hell game</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cell" tabindex="-1">
+                            <a href="random-project.html#Ethermine_Tracker">
+                                <div class="content">
+                                    <img
+                                        src="images/Ethermine%20Tracker.png"
+                                        alt="Ethermine Tracker"
+                                        style="width: 100%"
+                                    />
+                                    <h3>Ethermine Tracker</h3>
+                                    <p>Tracks Ethereum mining data</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cell" tabindex="-1">
+                            <a href="random-project.html#AirbrakesV2">
+                                <div class="content">
+                                    <img
+                                        src="images/RocketryLogoCropped.png"
+                                        alt="Tacho Lycos"
+                                        style="width: 100%"
+                                    />
+                                    <h3>AirbrakesV2</h3>
+                                    <p>
+                                        The code for my team's Airbrakes rocket
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cell" tabindex="-1">
+                            <a href="random-project.html#TigerHelpers">
+                                <div class="content">
+                                    <img
+                                        src="images/4829LogoTransparent.png"
+                                        alt="TigerHelpers"
+                                        style="width: 100%"
+                                    />
+                                    <h3>TigerHelpers</h3>
+                                    <p>A library for computer vision in FRC</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
+
+        <section class="knowledge-section" id="knowledge_section_id">
+            <div class="knowledge-container">
+                <h2>My Knowledge & Experience</h2>
+
+                <div class="knowledge-div">
+                    <p>
+                        I love computer science and programming because of how
+                        much there is to learn. Since I first learned how to
+                        program with Swift, I've been learning new things and
+                        have been trying to expand my knowledge. In fact, I made
+                        this website to learn more about web development!
+                    </p>
+                </div>
+
+                <hr />
+
+                <div class="knowledge-showcase">
+                    <div class="language-box">
+                        <h3>Languages:</h3>
+                        <div class="languages">
+                            <div
+                                class="language"
+                                onclick="selectLanguage(this)"
+                            >
+                                <div class="center">
+                                    <p class="language-num">0</p>
+                                    <p class="language-content">Python</p>
+                                </div>
+                            </div>
+                            <div
+                                class="language"
+                                onclick="selectLanguage(this)"
+                            >
+                                <div class="center">
+                                    <p class="language-num">1</p>
+                                    <p class="language-content">Java</p>
+                                </div>
+                            </div>
+                            <div
+                                class="language"
+                                onclick="selectLanguage(this)"
+                            >
+                                <div class="center">
+                                    <p class="language-num">2</p>
+                                    <p class="language-content">Swift</p>
+                                </div>
+                            </div>
+                            <div
+                                class="language"
+                                onclick="selectLanguage(this)"
+                            >
+                                <div class="center">
+                                    <p class="language-num">3</p>
+                                    <p class="language-content">JS/TS</p>
+                                </div>
+                            </div>
+                            <div
+                                class="language"
+                                onclick="selectLanguage(this)"
+                            >
+                                <div class="center">
+                                    <p class="language-num">4</p>
+                                    <p class="language-content">C/C++/C#</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="outer-language-info-box">
+                        <div class="language-info-box">
+                            <div class="progress-bars">
+                                <div class="chart">
+                                    <span>Confidence:</span>
+                                    <footer>
+                                        <div
+                                            class="progress-bar"
+                                            id="confidence-bar"
+                                        ></div>
+                                    </footer>
+                                </div>
+                                <div class="chart">
+                                    <span>Enjoyment:</span>
+                                    <footer>
+                                        <div
+                                            class="progress-bar"
+                                            id="enjoyment-bar"
+                                        ></div>
+                                    </footer>
+                                </div>
+                            </div>
+
+                            <p class="language-description">
+                                Python was the second language I learned. It's
+                                the one I'm most comfortable with, and I've used
+                                it to make a variety of things.
+                            </p>
+
+                            <div class="example-projects">
+                                <div class="project" id="project1">
+                                    <div class="project-inner">
+                                        <div class="project-top">
+                                            <a href="random-project.html#Mazer">
+                                                <span>Mazer</span>
+                                            </a>
+                                            <p>
+                                                Make a maze and watch as it is
+                                                solved!
+                                            </p>
+                                        </div>
+                                        <div class="project-bottom">
+                                            <p>PyQt5</p>
+                                            <a
+                                                href="https://github.com/jacksonelia/Mazer"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="ion-social-github-outline"
+                                                ></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project" id="project2">
+                                    <div class="project-inner">
+                                        <div class="project-top">
+                                            <a
+                                                href="random-project.html#DCS_Terminal"
+                                            >
+                                                <span>DCS Terminal</span>
+                                            </a>
+                                            <p>
+                                                Automatically solves any course
+                                                on Datacamp!
+                                            </p>
+                                        </div>
+                                        <div class="project-bottom">
+                                            <p>Selenium</p>
+                                            <a
+                                                href="https://github.com/jacksonelia/DCS_Terminal"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="ion-social-github-outline"
+                                                ></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-section-id">
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+
+                <div class="contact-div">
+                    <p>
+                        If you want to contact me for any reason, even to say
+                        hi, my inbox is always open! I'll try to get back to you
+                        as soon as possible.
+                    </p>
+                    <a class="button1" href="mailto:jackgeorgeelia@gmail.com"
+                        ><span class="button1span">Send Email</span></a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <canvas id="conway-footer"></canvas>
+            <footer>
+                <div class="social">
+                    <a
+                        href="https://www.instagram.com/jackgeorgeelia/"
+                        target="_blank"
+                        ><i class="icon ion-social-instagram"></i
+                    ></a>
+                    <a href="https://leetcode.com/jacksonelia/" target="_blank"
+                        ><i class="icon ion-code"></i
+                    ></a>
+                    <a href="https://github.com/jacksonelia" target="_blank"
+                        ><i class="icon ion-social-github"></i
+                    ></a>
+                    <a href="mailto:jackgeorgeelia@gmail.com" target="_blank"
+                        ><i class="icon ion-ios-email"></i
+                    ></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="index.html#knowledge_section_id">My Skills</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="index.html#contact-section-id">Contact Me</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="random-project.html">See a Random Project</a>
+                    </li>
+                </ul>
+                <p class="copyright">Jackson Elia © 2026</p>
+            </footer>
+            <div id="conway-footer-menu">
+                <button id="start-button" onclick="startGame(1)">
+                    <i class="icon ion-refresh"></i>
+                </button>
+                <input type="range" id="conway-speed-slider" />
+                <input type="range" id="conway-density-slider" />
+                <button id="expand-button" onclick="expandConway()">
+                    <i class="icon ion-chevron-down"></i>
+                </button>
+            </div>
         </div>
 
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-<section class="contact-section" id="contact-section-id">
-  <div class="contact-container">
-
-    <h2>Contact Me</h2>
-
-    <div class="contact-div">
-      <p>If you want to contact me for any reason, even to say hi, my inbox is always open! I'll
-        try to get back to you as soon as possible.</p>
-      <a class="button1" href="mailto:jackgeorgeelia@gmail.com"><span
-          class="button1span">Send Email</span></a>
-    </div>
-
-  </div>
-</section>
-
-<div class="footer">
-  <canvas id="conway-footer"></canvas>
-  <footer>
-    <div class="social">
-      <a href="https://www.instagram.com/jackgeorgeelia/" target="_blank"><i
-          class="icon ion-social-instagram"></i></a>
-      <a href="https://leetcode.com/traptricker/" target="_blank"><i class="icon ion-code"></i></a>
-      <a href="https://github.com/jacksonelia" target="_blank"><i
-          class="icon ion-social-github"></i></a>
-      <a href="mailto:jackgeorgeelia@gmail.com" target="_blank"><i
-          class="icon ion-ios-email"></i></a></div>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="index.html">Home</a></li>
-      <li class="list-inline-item"><a href="about.html">About Me</a></li>
-      <li class="list-inline-item"><a href="index.html#knowledge_section_id">My Skills</a></li>
-      <li class="list-inline-item"><a href="index.html#contact-section-id">Contact Me</a></li>
-      <li class="list-inline-item"><a href="random-project.html">See a Random Project</a></li>
-    </ul>
-    <p class="copyright">Jackson Elia © 2025</p>
-  </footer>
-  <div id="conway-footer-menu">
-    <button id="start-button" onclick="startGame(1)"><i class="icon ion-refresh"></i></button>
-    <input type="range" id="conway-speed-slider">
-    <input type="range" id="conway-density-slider">
-    <button id="expand-button" onclick="expandConway()"><i class="icon ion-chevron-down"></i>
-    </button>
-  </div>
-</div>
-
-<script src="scripts/language-showcase.js"></script>
-<script src="scripts/matrix-text.js"></script>
-<script src="scripts/conways-game-of-life.js"></script>
-<script src="scripts/mobile-intersect-hover.js"></script>
-<script src="scripts/change-theme-color.js" defer></script>
-
-</body>
+        <script src="scripts/language-showcase.js"></script>
+        <script src="scripts/matrix-text.js"></script>
+        <script src="scripts/conways-game-of-life.js"></script>
+        <script src="scripts/mobile-intersect-hover.js"></script>
+        <script src="scripts/change-theme-color.js" defer></script>
+    </body>
 </html>
