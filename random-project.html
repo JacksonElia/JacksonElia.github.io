@@ -1393,41 +1393,30 @@
         <i class="ion-social-github-outline"></i>
       </a>
     </div>
-    <h3 class="page-subtitle">Firmware for HPRC's modular rocket flight computer</h3>
+    <h3 class="page-subtitle">My HPRC's custom rocket flight computer</h3>
 
     <div class="random-project-image">
-      <img src="images/firm-flight-computer-placeholder.svg" alt="FIRM Flight Computer placeholder" loading="lazy">
+      <img src="images/FirmV0.1andV1.0.png" alt="FIRM Flight Computer" loading="lazy">
     </div>
 
     <hr>
 
     <div class="random-project-first-block">
       <p>
-        FIRM is the core firmware stack used by NCSU High Powered Rocketry Club for flight-critical avionics.
-        It handles sensor data, state transitions, and hardware interfaces that support launch and recovery
-        operations.
+        Project FIRM (Filtered Inertial Rotation Module) is a entirely-custom flight computer that I helped
+        make for my Rocketry club. It is a custom-designed PCB (designed in KiCad) with hand-picked sensors
+        to perform data collection during rocket flights and process the data through a Kalman Filter for
+        high accuracy.
       </p>
-    </div>
-
-    <div class="random-project-second-block">
-      <h3 class="subtitle">Project Snapshot</h3>
-      <div class="random-project-text-video">
-        <p>
-          This is a placeholder image slot for a board photo, dashboard capture, or telemetry plot.
-          Swap this image once you have media you want to show for the project.
-        </p>
-        <img class="random-project-video" src="images/firm-flight-computer-placeholder.svg"
-             alt="FIRM project media placeholder" loading="lazy">
-      </div>
     </div>
 
     <div class="random-project-third-block">
       <h3 class="subtitle">Why I made it</h3>
 
       <p>
-        This project represents the flight-computer software work I did with my team to build a dependable
-        platform for our rockets. It ties together embedded systems work, software reliability, and real-world
-        testing under tight competition constraints.
+        We wanted one dependable platform that combined clean avionics software with hardware we could trust in
+        flight. Designing the PCB ourselves and pairing it with embedded C firmware gave us tighter control over the
+        full system, from sensor choice to onboard filtering and data quality.
       </p>
     </div>
 
@@ -1438,21 +1427,21 @@
         <div class="things-learned">
           <ol class="things-learned-list">
             <li class="thing-learned-item">
-              Embedded C/C++
+              PCB design
               <p>
-                Built low-level logic for hardware communication and flight-state behavior.
+                Designed and iterated on a custom board tailored to our payload and airbrake needs.
               </p>
             </li>
             <li class="thing-learned-item">
-              Reliability-focused design
+              RTOS
               <p>
-                Worked on software patterns and validation strategies for mission-critical behavior.
+                Structured flight firmware with real time scheduling for embedded control.
               </p>
             </li>
             <li class="thing-learned-item">
-              Team collaboration
+              STM32Cube HAL
               <p>
-                Coordinated in a shared codebase with review workflows and iterative testing.
+                Built hardware interfaces on STM32 using HAL for reliable low-level peripheral control.
               </p>
             </li>
           </ol>
@@ -1483,36 +1472,25 @@
     <h3 class="page-subtitle">Rust-based modeling and simulation tools for rocketry</h3>
 
     <div class="random-project-image">
-      <img src="images/hprm-placeholder.svg" alt="HPRM placeholder image" loading="lazy">
+      <img src="images/HPRM.png" alt="HPRM image" loading="lazy">
     </div>
 
     <hr>
 
     <div class="random-project-first-block">
       <p>
-        High-Powered Rocketry Modeling (HPRM) is a simulation and analysis project used by NCSU HPRC to better
-        understand vehicle behavior and improve design decisions before flight.
+        High-Powered Rocketry Modeling (HPRM) is written in Rust and used by my rocketry team to simulate rocket behavior
+        before and during flight. We also packaged it for Python as a PyPI package using maturin so it can be used in Python
+        projects without rewriting the core simulation code while still being extremely fast.
       </p>
-    </div>
-
-    <div class="random-project-second-block">
-      <h3 class="subtitle">Project Snapshot</h3>
-      <div class="random-project-text-video">
-        <p>
-          Placeholder slot for simulation plots, model outputs, or UI screenshots.
-          Replace this with any visuals you want to feature later.
-        </p>
-        <img class="random-project-video" src="images/hprm-placeholder.svg"
-             alt="HPRM media placeholder" loading="lazy">
-      </div>
     </div>
 
     <div class="random-project-third-block">
       <h3 class="subtitle">Why I made it</h3>
 
       <p>
-        This project highlights my Rust work in rocketry and the modeling side of engineering.
-        It supports faster iteration by giving our team better insights before field testing.
+          For our airbrakes system we needed an accurate method to predict rocket apogee, but we needed it to be quick
+          so we wrote it in Python.
       </p>
     </div>
 
@@ -1523,21 +1501,21 @@
         <div class="things-learned">
           <ol class="things-learned-list">
             <li class="thing-learned-item">
-              Rust systems programming
+              Rust + Python packaging
               <p>
-                Built performance-minded simulation logic with strong type safety.
+                Built the core in Rust and published Python bindings to PyPI using maturin.
               </p>
             </li>
             <li class="thing-learned-item">
-              Modeling and analysis
+              ODE solver methods
               <p>
-                Worked with modeling workflows to evaluate tradeoffs in rocket behavior.
+                Implemented multiple ODE solving approaches to model flight dynamics accurately.
               </p>
             </li>
             <li class="thing-learned-item">
-              Engineering iteration
+              Runge–Kutta–Fehlberg method (RK45)
               <p>
-                Used simulations to improve design decisions ahead of real-world tests.
+                RK45 is the main method used for solving the simulation ODEs.
               </p>
             </li>
           </ol>
@@ -1594,16 +1572,16 @@
         <div class="additional-project-item">
           <div class="additional-project-image">
             <a href="random-project.html#FIRM_Flight_Computer" onclick="scrollUp()">
-              <img class="project-icon-image" alt="FIRM Flight Computer placeholder icon"
-                   src="images/firm-flight-computer-icon-placeholder.svg">
+              <img class="project-icon-image" alt="FIRM Flight Computer icon"
+                   src="images/orange-firm-logo-512.png">
             </a>
           </div>
         </div>
         <div class="additional-project-item">
           <div class="additional-project-image">
             <a href="random-project.html#HPRM" onclick="scrollUp()">
-              <img class="project-icon-image" alt="HPRM placeholder icon"
-                   src="images/hprm-icon-placeholder.svg">
+              <img class="project-icon-image" alt="HPRM icon"
+                   src="images/HPRM-LOGO.png">
             </a>
           </div>
         </div>
