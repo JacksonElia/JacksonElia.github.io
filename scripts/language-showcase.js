@@ -1,7 +1,8 @@
 let languages = document.getElementsByClassName("language");
-let languageInfoBox = document.getElementsByClassName("language-info-box")[0] // Theres only one
+let languageInfoBox = document.getElementsByClassName("language-info-box")[0]; // Theres only one
 const mainColor = getComputedStyle(languages[0]).getPropertyValue(
-    "--mainColor");
+  "--mainColor",
+);
 
 // Sets Python as selected as default
 selectLanguage(languages[0]);
@@ -18,7 +19,7 @@ function selectLanguage(selectedLanguage) {
       // Sets both the number and language name text color
       language.getElementsByTagName("p")[0].style.color = mainColor;
       language.getElementsByTagName("p")[1].style.color = mainColor;
-      setLanguageInfo(language)
+      setLanguageInfo(language);
     } else {
       language.style.cssText = "";
       language.getElementsByTagName("p")[0].style.cssText = "";
@@ -30,7 +31,6 @@ function selectLanguage(selectedLanguage) {
 // Formats the info box based on what language is selected
 function setLanguageInfo(language) {
   switch (language.getElementsByTagName("p")[1].textContent) {
-
     case "Python":
       languageInfoBox.innerHTML = `
         <div class="progress-bars">
@@ -48,7 +48,7 @@ function setLanguageInfo(language) {
           </div>
         </div>
         <p class="language-description">
-            Python was the second language I learned. It's the one I'm most comfortable with, and 
+            Python was the second language I learned. It's the one I'm most comfortable with, and
             I've used it to make a variety of things.
           </p>
         <div class="example-projects">
@@ -108,7 +108,7 @@ function setLanguageInfo(language) {
           </div>
         </div>
         <p class="language-description">
-          Java was the third language I learned. I started getting better and 
+          Java was the third language I learned. I started getting better and
           more interested in it because it's what my robotics team uses.
         </p>
         <div class="example-projects">
@@ -228,7 +228,7 @@ function setLanguageInfo(language) {
         </div>
         <p class="language-description">
           I first learned JavaScript with this website being
-          my motivator. Then I learned TypeScript during my internship at Ndustrial and refined 
+          my motivator. Then I learned TypeScript during my internship at Ndustrial and refined
           my knowledge of it with personal projects.
         </p>
         <div class="example-projects">
@@ -311,15 +311,14 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://github.com/JacksonElia/C_Games">
-                  <span>C Games</span>
+                <a href="https://jacksonelia.github.io/random-project.html#FIRM_Flight_Computer">
+                  <span>FIRM Flight Computer</span>
                 </a>
-<!--                TODO: add project FIRM here -->
-                <p>A collection of visual oddities made with C.</p>
+                <p>Flight computer for rocketry.</p>
               </div>
               <div class="project-bottom">
-                <p>No libraries used</p>
-                <a href="https://github.com/JacksonElia/C_Games" target="_blank">
+                <p>C/C++</p>
+                <a href="https://github.com/NCSU-High-Powered-Rocketry-Club/FIRM" target="_blank">
                   <i class="ion-social-github-outline"></i>
                 </a>
               </div>
@@ -329,6 +328,65 @@ function setLanguageInfo(language) {
       `;
       document.getElementById("confidence-bar").style.cssText = "width: 70%;";
       document.getElementById("enjoyment-bar").style.cssText = "width: 90%;";
+      break;
+
+    case "Rust":
+      languageInfoBox.innerHTML = `
+        <div class="progress-bars">
+          <div class="chart">
+            <span>Confidence:</span>
+            <footer>
+              <div class="progress-bar" id="confidence-bar"></div>
+            </footer>
+          </div>
+          <div class="chart">
+            <span>Enjoyment:</span>
+            <footer>
+              <div class="progress-bar" id="enjoyment-bar"></div>
+            </footer>
+          </div>
+        </div>
+        <p class="language-description">
+          I've been using Rust in rocketry projects where reliability and performance matter.
+          It's helped me get better at systems-level design and safer low-level programming.
+        </p>
+        <div class="example-projects">
+          <div class="project" id="project1">
+            <div class="project-inner">
+              <div class="project-top">
+                <a href="https://jacksonelia.github.io/random-project.html#HPRM">
+                  <span>HPR Modeling</span>
+                </a>
+                <p>Simulation and modeling tools for high-powered rocketry.</p>
+              </div>
+              <div class="project-bottom">
+                <p>Rust</p>
+                <a href="https://github.com/NCSU-High-Powered-Rocketry-Club/High-Powered-Rocketry-Modeling" target="_blank">
+                  <i class="ion-social-github-outline"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project" id="project2">
+            <div class="project-inner">
+              <div class="project-top">
+                <a href="https://github.com/NCSU-High-Powered-Rocketry-Club/FIRM-Client">
+                  <span>FIRM Client</span>
+                </a>
+                <p>A Rust client for interacting with the FIRM flight stack.</p>
+              </div>
+              <div class="project-bottom">
+                <p>Rust</p>
+                <a href="https://github.com/NCSU-High-Powered-Rocketry-Club/FIRM-Client" target="_blank">
+                  <i class="ion-social-github-outline"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      document.getElementById("confidence-bar").style.cssText = "width: 55%;";
+      document.getElementById("enjoyment-bar").style.cssText = "width: 85%;";
       break;
   }
 }

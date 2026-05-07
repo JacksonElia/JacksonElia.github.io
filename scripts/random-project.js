@@ -60,8 +60,14 @@ function loadPage() {
     case "#AirbrakesV2":
       showProject(15);
       break;
+    case "#FIRM_Flight_Computer":
+      showProject(16);
+      break;
+    case "#HPRM":
+      showProject(17);
+      break;
     default:
-      showProject(Math.ceil(Math.random() * 15));
+      showProject(Math.ceil(Math.random() * 17));
   }
 }
 
