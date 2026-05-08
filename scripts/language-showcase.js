@@ -55,7 +55,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#Mazer">
+                <a href="random-project.html#Mazer">
                   <span>Mazer</span>
                 </a>
                 <p>Make a maze and watch as it is solved!</p>
@@ -71,7 +71,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#DCS_Terminal">
+                <a href="random-project.html#DCS_Terminal">
                   <span>DCS Terminal</span>
                 </a>
                 <p>Automatically solves any course on Datacamp!</p>
@@ -115,7 +115,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#Bouncy">
+                <a href="random-project.html#Bouncy">
                   <span>Bouncy</span>
                 </a>
                 <p>A simple game that quickly becomes chaos.</p>
@@ -131,7 +131,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#Ethermine_Tracker">
+                <a href="random-project.html#Ethermine_Tracker">
                   <span>Ether Tracker</span>
                 </a>
                 <p>Tracks a miner address and stores data.</p>
@@ -175,7 +175,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#William_Whitakers_Words_App">
+                <a href="random-project.html#William_Whitakers_Words_App">
                   <span>William Whitaker's</span>
                 </a>
                 <p>A Latin to English translation app.</p>
@@ -191,7 +191,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#Block_Drop">
+                <a href="random-project.html#Block_Drop">
                   <span>Block Drop</span>
                 </a>
                 <p>A tetris-inspired, block puzzle game. </p>
@@ -251,7 +251,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project2">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#Casino_Crawl">
+                <a href="random-project.html#Casino_Crawl">
                   <span>Casino Crawl</span>
                 </a>
                 <p>A small, game jam dungeon crawler.</p>
@@ -311,7 +311,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#FIRM_Flight_Computer">
+                <a href="random-project.html#FIRM_Flight_Computer">
                   <span>FIRM Flight Computer</span>
                 </a>
                 <p>Flight computer for rocketry.</p>
@@ -354,7 +354,7 @@ function setLanguageInfo(language) {
           <div class="project" id="project1">
             <div class="project-inner">
               <div class="project-top">
-                <a href="https://jacksonelia.github.io/random-project.html#HPRM">
+                <a href="random-project.html#HPRM">
                   <span>HPR Modeling</span>
                 </a>
                 <p>Simulation and modeling tools for high-powered rocketry.</p>

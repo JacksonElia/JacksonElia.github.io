@@ -1,74 +1,76 @@
-let randomProjects = document.getElementsByClassName("random-project-div")
+const randomProjects = document.getElementsByClassName("random-project-div");
 
-function showProject(projectNumber) {
-  for (let randomProject of randomProjects) {
+const hashToProjectTitle = {
+  "#AFK_Apex_Bot": "AFK Apex Bot",
+  "#Bouncy": "Bouncy",
+  "#Casino_Crawl": "Casino Crawl",
+  "#COC_Auto_Bot": "COC Auto Bot",
+  "#DCS_Terminal": "DCS Terminal",
+  "#Ethermine_Tracker": "Ethermine Tracker",
+  "#Mazer": "Mazer",
+  "#Screen_Dimmer": "Screen Dimmer",
+  "#This_Website": "This Website",
+  "#William_Whitakers_Words_App": "William Whitaker's Words App",
+  "#Block_Drop": "Block Drop",
+  "#NCT4AA_Website": "NCT4AA Website",
+  "#TigerHelpers": "TigerHelpers",
+  "#TitaniumTigersWebsite": "Titanium Tigers Website",
+  "#AirbrakesV2": "AirbrakesV2",
+  "#FIRM_Flight_Computer": "FIRM Flight Computer",
+  "#HPRM": "High-Powered Rocketry Modeling",
+};
+
+function hideAllProjects() {
+  for (const randomProject of randomProjects) {
     randomProject.style.display = "none";
     randomProject.style.visibility = "hidden";
-
   }
-  let randomProject = randomProjects[projectNumber]
-  randomProject.style.display = "block";
-  randomProject.style.visibility = "visible";
+}
+
+function showProject(projectElement) {
+  hideAllProjects();
+  projectElement.style.display = "block";
+  projectElement.style.visibility = "visible";
+}
+
+function findProjectByTitle(title) {
+  for (const randomProject of randomProjects) {
+    const titleElement = randomProject.querySelector(".page-title");
+    if (titleElement && titleElement.textContent.trim() === title) {
+      return randomProject;
+    }
+  }
+  return null;
 }
 
 function loadPage() {
-  let projectName = window.location.hash;
+  const currentHash = window.location.hash;
+  const projectTitle = hashToProjectTitle[currentHash];
 
-  switch (projectName) {
-    case "#AFK_Apex_Bot":
-      showProject(1);
-      break;
-    case "#Bouncy":
-      showProject(2);
-      break;
-    case "#Casino_Crawl":
-      showProject(3);
-      break;
-    case "#COC_Auto_Bot":
-      showProject(4);
-      break;
-    case "#DCS_Terminal":
-      showProject(5);
-      break;
-    case "#Ethermine_Tracker":
-      showProject(6)
-      break;
-    case "#Mazer":
-      showProject(7);
-      break;
-    case "#Screen_Dimmer":
-      showProject(8);
-      break;
-    case "#This_Website":
-      showProject(9);
-      break;
-    case "#William_Whitakers_Words_App":
-      showProject(10);
-      break;
-    case "#Block_Drop":
-      showProject(11);
-      break;
-    case "#NCT4AA_Website":
-      showProject(12);
-      break;
-    case "#TigerHelpers":
-      showProject(13);
-      break;
-    case "#TitaniumTigersWebsite":
-      showProject(14);
-      break;
-    case "#AirbrakesV2":
-      showProject(15);
-      break;
-    case "#FIRM_Flight_Computer":
-      showProject(16);
-      break;
-    case "#HPRM":
-      showProject(17);
-      break;
-    default:
-      showProject(Math.ceil(Math.random() * 17));
+  if (currentHash) {
+    if (!projectTitle) {
+      console.error(`Unknown project hash: ${currentHash}`);
+      showProject(randomProjects[1]);
+      return;
+    }
+
+    const matchingProject = findProjectByTitle(projectTitle);
+    if (!matchingProject) {
+      console.error(`Mapped project title not found: ${projectTitle}`);
+      showProject(randomProjects[1]);
+      return;
+    }
+
+    showProject(matchingProject);
+    return;
   }
+
+  const firstRealProjectIndex = 1; // skip the template block
+  const randomIndex =
+    Math.floor(
+      Math.random() * (randomProjects.length - firstRealProjectIndex),
+    ) + firstRealProjectIndex;
+  showProject(randomProjects[randomIndex]);
 }
 
 loadPage();
